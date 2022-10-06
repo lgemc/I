@@ -1,0 +1,25 @@
+{
+  "name": "welness",
+  "version": "1.0.0",
+  "description": "Welness informative app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgemc/food-welness.git"
+  },
+  "keywords": [
+    "welness"
+  ],
+  "author": "Luis Gerardo Manrique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgemc/food-welness/issues"
+  },
+  "homepage": "https://github.com/lgemc/food-welness#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
