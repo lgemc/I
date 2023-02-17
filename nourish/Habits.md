@@ -12,3 +12,20 @@
 - Granadilla
 - Pepino
 - Pimenton
+- Trucha
+- Carne de pollo
+- Carne de res
+- Carne de cerdo
+- Aguacate
+- Papas
+- Tortillas
+- Sal
+- Lechuga romana
+- Tofu
+- Naranjas
+
+## Comida removida
+- Azucar
+- Grasas saturadas
+- Arroz blanco
+- Harinas refinadas
