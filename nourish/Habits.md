@@ -10,3 +10,5 @@
 - Tomate
 - Banano
 - Granadilla
+- Pepino
+- Pimenton
