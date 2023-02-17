@@ -1,6 +1,6 @@
-import { KiloCalorie } from "../../../measure/energy/calories";
-import { MilliLiter } from "../../../measure/volume/volumes";
-import { Gram, MilliGram } from "../../../measure/weight/weights";
+import { KiloCalorie } from "../../../../../measure/energy/calories";
+import { MilliLiter } from "../../../../../measure/volume/volumes";
+import { Gram, MilliGram } from "../../../../../measure/weight/weights";
 import { Nutrients } from "../../nutrients/nutrients";
 import { Variants } from "../../variants";
 import { Table } from "./table";
@@ -18,15 +18,15 @@ export const whiteBread: Table = {
                 quantity: 3.41 * Gram,
             },
             {
-                nutrient: Nutrients.Calories,
+                nutrient: Nutrients.Calorie,
                 quantity: 261 * KiloCalorie,
             },
             {
-                nutrient: Nutrients.Carbohydrates,
+                nutrient: Nutrients.Carbohydrate,
                 quantity: 44.8 * Gram,
             },
             {
-                nutrient: Nutrients.Proteins,
+                nutrient: Nutrients.Protein,
                 quantity: 8.47 * Gram,
             },
             {
