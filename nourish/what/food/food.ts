@@ -7,7 +7,13 @@ export enum BaseFood {
     Cucumber = 'cucumber',
     Cheese = 'cheese',
     Pimenton = 'pimenton',
-    Tofu = 'tofu'
+    Tofu = 'tofu',
+    Banana = 'banana',
+    Kiwi = 'kiwi',
+    Apple = 'apple',
+    TreeTomato = 'tree-tomato',
+    Plum = 'plum'
 }
 
 export type Food = BaseFood | Variants
+export type Fruit = BaseFood.Kiwi | BaseFood.Banana | BaseFood.Apple | BaseFood.TreeTomato
