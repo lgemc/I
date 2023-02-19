@@ -24,6 +24,13 @@
 - Tofu
 - Naranjas
 
+# Por integrar
+- Granola
+- Kiwi
+- Soya
+- Cidra
+- Arracacha
+
 ## Comida removida
 - Azucar
 - Grasas saturadas
