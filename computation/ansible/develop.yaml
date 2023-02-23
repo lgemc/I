@@ -3,6 +3,10 @@
   connection: local
   become: yes
   tasks:
+    - name: ensure git
+      apt:
+        name: git
+        state: present
     - name: ensure cmake
       apt:
         name: cmake
