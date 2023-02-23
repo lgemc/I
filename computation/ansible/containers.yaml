@@ -1,0 +1,17 @@
+- name: Containers
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: Low level container
+      apt:
+        name: runc
+        state: present
+    - name: Container daemon present
+      apt:
+        name: containerd
+        state: present
+    - name: Container cli tool present
+      apt:
+        name: podman
+        state: present
