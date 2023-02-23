@@ -1,0 +1,55 @@
+- name: Develop
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: ensure cmake
+      apt:
+        name: cmake
+        state: present
+    - name: Ensure clang
+      apt:
+        name: clang
+        state: present
+    - name: be sure vim is installed
+      apt:
+        name: vim 
+        state: present
+    - name: nvm present
+      become: false
+      shell:
+        cmd: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        creates: /home/{{ ansible_user }}/.nvm/nvm.sh
+    - name: install node version
+      become: false
+      shell:
+        cmd: /bin/bash -c "source ~/.nvm/nvm.sh && nvm install 18 && nvm alias default 18"
+        creates: /home/{{ ansible_user }}/.nvm/alias
+    - name: check if cargo is installed
+      shell:
+        cmd: command -v cargo
+        creates: /home/{{ ansible_user }}/.cargo/bin/cargo
+      become: false
+      register: cargo_exists
+      ignore_errors: yes
+    - name: download cargo installer
+      when: cargo_exists is failed
+      become: false
+      get_url:
+        url: https://sh.rustup.rs
+        dest: /tmp/sh.rustup.rs
+        mode: '0755'
+        force: 'yes'
+      tags:
+        - rust
+    - name: install rust/cargo
+      become: false
+      when: cargo_exists is failed
+      shell: /tmp/sh.rustup.rs -y
+      tags:
+        - rust
+    - name: install bun
+      become: false
+      shell:
+        cmd: curl -fsSL https://bun.sh/install | bash
+        creates: /home/{{ ansible_user }}/.bun/bin/bun
