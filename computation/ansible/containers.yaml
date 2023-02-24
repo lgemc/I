@@ -11,7 +11,15 @@
       apt:
         name: containerd
         state: present
+    - name: Lxc present
+      apt:
+        name: lxc
+        state: present 
     - name: Container cli tool present
       apt:
         name: podman
+        state: present
+    - name: Checkpoint restore in user space
+      apt:
+        name: criu
         state: present
