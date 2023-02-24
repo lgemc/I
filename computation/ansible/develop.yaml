@@ -3,6 +3,22 @@
   connection: local
   become: yes
   tasks:
+    - import_role:
+        name: gantsign.visual-studio-code
+      become: false
+      vars:
+        visual_studio_code_extensions:
+          - golang/vscode-go
+    - import_role:
+        name: abdennour.golang
+      become: true
+      vars:
+        golang_version: 1.20.1
+    - name: ensure wastime
+      become: false
+      shell:
+        cmd: curl https://wasmtime.dev/install.sh -sSf | bash
+        creates: /home/{{ ansible_user }}/.wasmtime/bin/wasmtime
     - name: ensure git
       apt:
         name: git
