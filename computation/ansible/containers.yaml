@@ -23,3 +23,16 @@
       apt:
         name: criu
         state: present
+    - name: Minikube
+      shell:
+        cmd: |
+          curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+          sudo install minikube-linux-amd64
+          rm minikube-linux-amd64  
+        creates: /usr/local/bin/minikube
+    - name: Kubectl
+      shell:
+        cmd: |
+          curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+          install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+        creates: /usr/local/bin/kubectl
