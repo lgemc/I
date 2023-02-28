@@ -3,6 +3,14 @@
   connection: local
   become: yes
   tasks:
+    - name: psql client common
+      apt:
+        name: postgresql-client-common
+        state: present
+    - name: psql client
+      apt:
+        name: postgresql-client-14
+        state: present
     - import_role:
         name: gantsign.visual-studio-code
       become: false
