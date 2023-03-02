@@ -23,8 +23,9 @@
 - Lechuga romana
 - Tofu
 - Naranjas
-
 # Por integrar
+- Chia
+- Arandanos
 - Granola
 - Kiwi
 - Soya
