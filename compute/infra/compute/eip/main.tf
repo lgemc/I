@@ -7,3 +7,7 @@ resource "aws_eip" "main_eip" {
     "Name"    = "main_eip"
   }
 }
+
+output "main_eip_address" {
+  value = aws_eip.main_eip.address
+}
