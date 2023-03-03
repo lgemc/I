@@ -1,5 +1,5 @@
 resource "aws_instance" "main_node" {
-  ami = "ami-0a85ae1a9058bec7c"
+  ami = "ami-05ece8915d9fcfc2b"
 
   instance_type = "a1.medium"
 

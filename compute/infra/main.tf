@@ -5,9 +5,15 @@ provider "aws" {
 module "compute" {
   source = "./compute"
 
-  mmain_network_interface_id = module.vpc.main_network_interface_id
+  main_network_interface_id = module.vpc.main_network_interface_id
+  main_vpc_id               = module.vpc.main_vpc_id
 }
 
 module "vpc" {
-  source = "./vpc"
+  source                 = "./vpc"
+  main_security_group_id = module.compute.main_security_group_id
+}
+
+output "main_eip_address" {
+  value = module.compute.main_eip_address
 }

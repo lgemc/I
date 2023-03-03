@@ -8,8 +8,14 @@ module "subnet" {
 }
 
 module "network_interface" {
-  source         = "./network-interface"
-  main_subnet_id = module.subnet.main_subnet_id
+  source                 = "./network-interface"
+  main_subnet_id         = module.subnet.main_subnet_id
+  main_security_group_id = var.main_security_group_id
+}
+
+module "internet_gateway" {
+  source      = "./gateway"
+  main_vpc_id = module.vpc.main_vpc_id
 }
 
 output "main_vpc_id" {
