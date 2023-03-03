@@ -8,6 +8,11 @@ resource "aws_subnet" "main_subnet" {
   }
 }
 
+resource "aws_route_table_association" "main" {
+  subnet_id      = aws_subnet.main_subnet.id
+  route_table_id = var.main_route_table_id
+}
+
 output "main_subnet_id" {
   value = aws_subnet.main_subnet.id
 }

@@ -5,3 +5,7 @@ resource "aws_internet_gateway" "main_gw" {
     "Name"    = "main-gw"
   }
 }
+
+output "main_internet_gateway_id" {
+  value = aws_internet_gateway.main_gw.id
+}
