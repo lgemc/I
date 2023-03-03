@@ -2,4 +2,7 @@ node_modules
 .DS_Store
 nourish/db/*
 dist/*
-
+**/.terraform/**
+**/*.backup
+**/*.hcl
+**/*.tfstate
