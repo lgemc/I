@@ -1,6 +1,6 @@
 {
     "exclude": ["computation/cellphones/**", "node_modules", "dist"],
-    "include": ["./**/*.ts", "./**/*.js"],
+    "include": ["./**/*.ts", "./**/*.js", "learn/books/books.md"],
     "compilerOptions": {
         "baseUrl": "../",
         "outDir": "./dist/",
