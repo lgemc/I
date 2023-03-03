@@ -2,6 +2,6 @@ variable "main_vpc_id" {
   type = string
 }
 
-variable "main_route_table_id" {
+variable "main_internet_gateway_id" {
   type = string
 }

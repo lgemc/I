@@ -1,10 +1,18 @@
 module "vpc" {
-  source = "./vpc"
+  source              = "./vpc"
+  main_route_table_id = module.route_table.main_route_table_id
 }
 
 module "subnet" {
-  source      = "./subnet"
-  main_vpc_id = module.vpc.main_vpc_id
+  source              = "./subnet"
+  main_vpc_id         = module.vpc.main_vpc_id
+  main_route_table_id = module.route_table.main_route_table_id
+}
+
+module "route_table" {
+  source                   = "./route-table"
+  main_vpc_id              = module.vpc.main_vpc_id
+  main_internet_gateway_id = module.internet_gateway.main_internet_gateway_id
 }
 
 module "network_interface" {
