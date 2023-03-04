@@ -1,0 +1,118 @@
+## Start
+
+Remember if you have no su, you can execute
+
+```bash
+doas -u root <<command>>
+```
+
+Add to /etc/fstab this line
+
+```bash
+cgroup /sys/fs/cgroup cgroup defaults 0 0
+```
+
+Add to /etc/cgconfig.conf this config
+
+```bash
+mount {
+  cpuacct = /cgroup/cpuacct;
+  memory = /cgroup/memory;
+  devices = /cgroup/devices;
+  freezer = /cgroup/freezer;
+  net_cls = /cgroup/net_cls;
+  blkio = /cgroup/blkio;
+  cpuset = /cgroup/cpuset;
+  cpu = /cgroup/cpu;
+}
+```
+
+On file /etc/update-extlinux.conf add or set this config
+
+```bash
+default_kernel_opts="pax_nouderef quiet rootfstype=ext4 cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
+```
+
+Refresh your boot loader
+
+On grub
+```bash
+doas -u root grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+**Restart the machine**
+
+# Installing dependecies
+
+```bash
+doas -u root  apk add --no-cache cni-plugins --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+export PATH=$PATH:/usr/share/cni-plugins/bin
+```
+
+Add next content to /etc/profile.d/cni.sh file
+
+```bash
+#!/bin/sh
+export PATH=$PATH:/usr/share/cni-plugins/bin
+```
+
+Install iptables
+
+```bash
+doas -u root apk add iptables
+```
+Download k3s distribution
+```bash
+wget https://github.com/rancher/k3s/releases/download/v1.26.2-rc1%2Bk3s1/k3s-arm64
+mv k3s-arm64 k3s
+doas -u root k3s /usr/bin
+doas -u root chmod +x /usr/bin/k3s
+```
+# Add it to startup
+Add service file
+
+```bash
+doas -u root vim /etc/init.d/k3s
+```
+
+With content
+
+```bash
+#!/sbin/openrc-run
+
+depend() {
+    after net-online
+    need net
+}
+
+start_pre() {
+    rm -f /tmp/k3s.*
+}
+
+supervisor=supervise-daemon
+name="k3s"
+command="/usr/bin/k3s"
+command_args="server >>/var/log/k3s.log 2>&1"
+
+pidfile="/var/run/k3s.pid"
+respawn_delay=5
+
+set -o allexport
+if [ -f /etc/environment ]; then source /etc/environment; fi
+if [ -f /etc/rancher/k3s/k3s.env ]; then source /etc/rancher/k3s/k3s.env; fi
+set +o allexport
+```
+
+Convert file to executable
+
+```bash
+doas -u root chmod +x /etc/init.d/k3s
+```
+
+Add to default run level (on each startup)
+
+```bash
+doas -u root rc-update add k3s default
+```
+
+
