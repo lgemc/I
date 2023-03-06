@@ -1,0 +1,1 @@
+Dados los beneficios explicados en una nota, he decidido mantener el foco y ser consecuente para obtener resultados a mediano plazo
