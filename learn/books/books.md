@@ -16,4 +16,13 @@
 
 - The linux programming interface
 - The ruby programming language
+- clojure programación funcional
+- kubernetes 1 y 2
 - The earlang programming language
+- Python for data analysis 
+ 
+## life style 
+
+- hábitos atómicos
+- build 
+- Think again
