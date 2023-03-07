@@ -10,19 +10,23 @@ spec:
   tls:
   - hosts:
     - atelier.run
+    - logs.atelier.run
     secretName: atelier-run-key
   rules:
     - host: atelier.run
       http:
         paths:
-          - path: /nginx
+          - path: /
             pathType: Prefix
             backend:
               service:
                 name: nginx 
                 port: 
                   number: 80
-          - path: /zinc
+    - host: logs.atelier.run
+      http:
+        paths:
+          - path: /
             pathType: Prefix
             backend:
               service:
