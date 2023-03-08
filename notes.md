@@ -53,3 +53,9 @@ a sus clases, y no se podra capitalizar mas de alli.
 El salario de los ingenieros e investigadores es alto por que sus horas de trabajo invertidas
 pueden afectar a muchas personas en muchos momentos, con patentes y con tecnologias replicables (ejemplo la nube, lo haces una vez pero le puede servir a millones, igual las redes sociales), igualmente sucede con los musicos talentosos, sus horas de trabajo se multiplican
 por millones de horas de listening si son famosos, a diferencia por ejemplo de un cantante en un bar.
+
+# 
+Parte de la estrategia de el éxito está en encontrar algo en lo que seas naturalmente bueno y mucho mejor que los demás, sin extremo esfuerzo, y que lo disfrutes, junta eso con tu segundo o tercer talento y crea un nuevo campo de juego y nuevos conceptos donde puedas ganar.
+
+Un buen jugador crea un nuevo juego en favor de sus fortalezas evadiendo sus debilidades.
+
