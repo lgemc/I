@@ -76,6 +76,10 @@
       shell: /tmp/sh.rustup.rs -y
       tags:
         - rust
+    - name: install vagrant
+      apt:
+        name: vagrant
+        state: present
     - name: install bun
       become: false
       shell:
