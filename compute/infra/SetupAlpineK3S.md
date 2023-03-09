@@ -36,8 +36,15 @@ default_kernel_opts="pax_nouderef quiet rootfstype=ext4 cgroup_enable=cpuset cgr
 Refresh your boot loader
 
 On grub
+
 ```bash
 doas -u root grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+On extlinux
+
+```bash
+doas -u root update-extlinux
 ```
 
 **Restart the machine**
@@ -61,14 +68,18 @@ Install iptables
 ```bash
 doas -u root apk add iptables
 ```
+
 Download k3s distribution
+
 ```bash
-wget https://github.com/rancher/k3s/releases/download/v1.26.2-rc1%2Bk3s1/k3s-arm64
+wget https://github.com/rancher/k3s/releases/download/v1.26.2-rc1%2Bk3s1/k3s # change to k3s-arm64 if needed
 mv k3s-arm64 k3s
-doas -u root k3s /usr/bin
+doas -u root mv k3s /usr/bin
 doas -u root chmod +x /usr/bin/k3s
 ```
+
 # Add it to startup
+
 Add service file
 
 ```bash
@@ -92,7 +103,7 @@ start_pre() {
 supervisor=supervise-daemon
 name="k3s"
 command="/usr/bin/k3s"
-command_args="server >>/var/log/k3s.log 2>&1"
+command_args="server --disable=traefik >>/var/log/k3s.log 2>&1" # disable traefik due to difficut configurations
 
 pidfile="/var/run/k3s.pid"
 respawn_delay=5
@@ -106,7 +117,7 @@ set +o allexport
 Convert file to executable
 
 ```bash
-doas -u root chmod +x /etc/init.d/k3s
+doas -u root chmod +x /etc/init.d/k3sdoas -u root chmod +x /etc/init.d/k3s
 ```
 
 Add to default run level (on each startup)
@@ -115,4 +126,8 @@ Add to default run level (on each startup)
 doas -u root rc-update add k3s default
 ```
 
+To start k3s in current session:
 
+```bash
+doas -u root rc-service k3s start
+```
