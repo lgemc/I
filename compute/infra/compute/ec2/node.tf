@@ -1,7 +1,7 @@
 resource "aws_instance" "main_node" {
-  ami = "ami-05ece8915d9fcfc2b"
+  ami = "ami-0aae12f4d7200e812"
 
-  instance_type = "a1.medium"
+  instance_type = "t3a.small"
 
   key_name = "lgmc"
 
