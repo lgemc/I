@@ -1,5 +1,10 @@
 #
 
+Configuración aparte de el servido, buena práctica de kubernetes 
+
+
+#
+
 General workflow management control pame, una forma de tener no sólo el código si no toda la estrategia de deployment en pequeños bloques
 
 #
