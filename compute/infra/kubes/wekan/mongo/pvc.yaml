@@ -4,6 +4,7 @@ metadata:
   name: db-volume-claim
   namespace: wekan
 spec:
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
