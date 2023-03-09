@@ -68,3 +68,13 @@ Un buen jugador crea un nuevo juego en favor de sus fortalezas evadiendo sus deb
 #
 
 Me di cuenta que me hace falta aprender a hacer maquinas virtuales rapido
+
+#
+
+Es probable que cada persona de a cuerdo a sus genes necesite x e y tipo de alimentacion
+
+De por si nos alimentamos mal, pero habra un tipo de personas al que les caiga especialmente mal
+
+#
+
+Para vagrant es mejor usar linux nativo
