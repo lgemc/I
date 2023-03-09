@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service 
+metadata:
+  name: zinc
+spec:
+  type: ClusterIP
+  selector:
+    app: zinc
+  ports:
+  - name: http
+    port: 4080
+    targetPort: 4080
