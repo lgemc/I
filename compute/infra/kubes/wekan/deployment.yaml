@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: wekan
+  name: wekan
+  labels:
+    app: wekan
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: wekan
+  template:
+    metadata:
+      labels:
+        app: wekan
+    spec:
+      containers:
+        - image: quay.io/wekan/wekan:v6.78
+          name: wekan
+          ports:
+          - containerPort: 8080
+            name: wekan
+          env:
+            - name: MONGO_URL
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-creds
+                  key: url
+            - name: PORT
+              value: "8080"
+            - name: ROOT_URL
+              value: https://projects.atelier.com
