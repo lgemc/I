@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wekan
+  namespace: wekan
+  labels:
+    app: wekan
+spec:
+  type: ClusterIP
+  selector:
+    app: wekan
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8080
+      targetPort: 8080

@@ -3,10 +3,13 @@ kind: PersistentVolume
 metadata:
   name: db-volume
   namespace: wekan
+  labels:
+    type: local
 spec:
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: manual
   capacity:
     storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
   hostPath:
     path: /data/wekan/mongo
