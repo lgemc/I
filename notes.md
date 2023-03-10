@@ -1,7 +1,59 @@
 #
+Para capitalizar algo debes manejarlo a la perfección, y este no debe comerte mucho tiempo, junta personas que estén interesadas y únelos a tu causa como Linux, ten artefactos que permitan que otros te descubran y aprendan de ti 
+#
+
+#
+
+#
+
+#
+
+#
+
+Tengo que tratar mi repo como mi producción, si no está funcionando que no pueda vivir, es lo inicial para aprender a mantener un sistema de otros funcionando
+
+#
+
+Para aprender hay que hacer un ambiente válido, feedback loop corto, información descubrible en tandas, permitir la especialización increméntal, práctica con memoria, descubriento incremental de los unknowns (observar lo que no se), memoria de actividad, versionamiento, marcadores de progreso, aprendizaje incremental 
+
+#
+
+La capa de datos debería estar abstraída y permitir rápidamente la adopción de nuevas técnicas de almacenamiento que sean efectivas para el caso de uso requerido 
+
+# 
+
+Data pipeline normalmente involucra tomar datos transformarlos en diferentes formatos y luego desplegarlos en alguna plataforma que los exponga, sobre esta base luego se pueden crear aplicaciones 
+
+#
+
+Escribir libro acerca de el capital, lo capitalizable y cómo capitalizar
+
+#
+Buscador de alimentos con sentido, que indique cómo se compara el contenido x de vitamina con el mínimo diario, que permita armar una compensación alimenticia dados unos alimentos para balancear el contenido;, que permita comparar un alimento vs otro 
+#
+
+El arquitecto de Salomón significa el conocimiento de él como con una maestría absoluta
+
+# 
+Mono repo en realidad significa reutilizaciok y cohesión 
+# 
+
+Caímos en la trampa de pensar que cualquiera puede emprender, pero lo cierto es que hace falta o ser un dios en el capital, o en el negocio, o en la ingeniería, o en ambos, de otra forma no serás successful
+
+#
+
+Entendí la importancia de los sistemas hypervisor como openrc y systemd 
+# 
+
+Entendí un poco sobre cómo funciona la declaratividsd en kubernetes, sería bueno algo así para ci/cd, que diga que siempre quiere x pod con la última versión de la imagen y se asegure que así será, en vez de esperar un deploy imperativo que el se asegure de eso
+
+#
 
 Configuración aparte de el servido, buena práctica de kubernetes 
 
+# 
+
+Preparar antes de salir a trotar los materiales para el desayuno, así estará más rápido y no tendré que mojarme ni meter las manos a la nevera 
 
 #
 
