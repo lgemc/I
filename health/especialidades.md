@@ -1,0 +1,15 @@
+- pediatria
+- ortopedia
+- medicina interna
+- cardiologia 
+- nutriólogia
+- alergología 
+- neurología
+- Radiologia
+- patología
+- anestesiología
+- endocrinología (glándulas, hormonas)
+- Psiquiatría 
+- Oftanmologia
+- otorrinolaringología
+- 
