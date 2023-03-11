@@ -4,7 +4,7 @@ metadata:
   name: gogs-db-claim
   namespace: gogs
 spec:
-  storageClassName: manual
+  storageClassName: ebs-sc 
   accessModes:
     - ReadWriteOnce
   resources:
