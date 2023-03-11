@@ -42,3 +42,9 @@ Permissions needed by your cluster are as follows
   ]
 }
 ```
+
+# About PVC (Persistent Volume Claims) and PV (Persisten Volumes)
+
+A claim can exists without a volume definition
+
+Persisten volume claims can be configured to only claims when are binded.
