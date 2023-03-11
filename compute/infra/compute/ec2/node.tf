@@ -5,6 +5,7 @@ resource "aws_instance" "main_node" {
 
   key_name = "lgmc"
 
+  iam_instance_profile = var.main_instance_profile_name
   network_interface {
     network_interface_id = var.main_network_interface_id
     device_index         = 0
