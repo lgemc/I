@@ -8,3 +8,4 @@ data:
   POSTGRES_DB: gogs
   POSTGRES_USER: gogs
   POSTGRES_PASSWORD: "12345"
+  PGDATA: /var/lib/postgresql/data/gogs
