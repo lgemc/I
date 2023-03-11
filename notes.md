@@ -1,5 +1,6 @@
 #
-Para capitalizar algo debes manejarlo a la perfección, y este no debe comerte mucho tiempo, junta personas que estén interesadas y únelos a tu causa como Linux, ten artefactos que permitan que otros te descubran y aprendan de ti 
+
+Para capitalizar algo debes manejarlo a la perfección, y este no debe comerte mucho tiempo, junta personas que estén interesadas y únelos a tu causa como Linux, ten artefactos que permitan que otros te descubran y aprendan de ti
 
 #
 
@@ -7,51 +8,48 @@ No es lo que yo deseo de otros si no revisar si es lo correcto, y cuál es el am
 
 #
 
-La alimentación de las clases bajas psoblemente derive también en su manipulabilidad, sacarlos de la realidad con alimentos ricos en grasas y azúcares, musica, drogas, televisión etc 
+La alimentación de las clases bajas psoblemente derive también en su manipulabilidad, sacarlos de la realidad con alimentos ricos en grasas y azúcares, musica, drogas, televisión etc
 
-La pregunta es cómo capitalizar esto donde todos salgan ganando 
-
-#
-
-
+La pregunta es cómo capitalizar esto donde todos salgan ganando
 
 #
 
+Los editores de codigo tienen un problema: no nos permiten pensar en recordacion
+al escribir un comando y nos autocompleta todo, esto hace que no tengamos que escribir
+standares para optimizar la recordacion de codigo y tampoco hace que se involucren las
+neruonas de memoria para descubrir el software, en otras palabras nos hace escribir peor
+codigo y ejercitar menos el cerebro al codificar, lo cual hace que no entendamos realmente
+el codigo
 
 #
 
-
+#
 
 #
 
-
+#
 
 #
 
+#
 
+La diferencia entre riqueza y pobreza está en un estado mental de yo quiero y yo puedo, o debo organizar para, a yo hago y yo deseo sin un panorama claro para concretarlo
+
+Yo se o puedo aprender o quiero aprender o entiendo como aprender a yo no se y espero que me enseñen
+
+Este estado se alcanza dado un ejercicio económico de supeditación en donde el individuo es despojado como tal de su condición
 
 #
 
-
-
-#
-
-La diferencia entre riqueza y pobreza está en un estado mental de yo quiero y yo puedo, o debo organizar para, a yo hago y yo deseo sin un panorama claro para concretarlo 
-
-Yo se o puedo aprender o quiero aprender o entiendo como aprender a yo no se y espero que me enseñen 
-
-Este estado se alcanza dado un ejercicio económico de supeditación en donde el individuo es despojado como tal de su condición 
-
-#
-
-Los antibióticos acaban también con la flora intestinal haciendo más difícil la regeneración de estos 
+Los antibióticos acaban también con la flora intestinal haciendo más difícil la regeneración de estos
 
 #
 
 Investigar sobre los laboratorios que venden medicina, para saber cuáles son buenos y cuáles no
 
 #
-Por que otra razón es el maestro de artes marciales maestro si no es por su repetición de miles de veces practicar sus técnicas 
+
+Por que otra razón es el maestro de artes marciales maestro si no es por su repetición de miles de veces practicar sus técnicas
 
 #
 
@@ -59,46 +57,51 @@ Tengo que tratar mi repo como mi producción, si no está funcionando que no pue
 
 #
 
-Para aprender hay que hacer un ambiente válido, feedback loop corto, información descubrible en tandas, permitir la especialización increméntal, práctica con memoria, descubriento incremental de los unknowns (observar lo que no se), memoria de actividad, versionamiento, marcadores de progreso, aprendizaje incremental 
+Para aprender hay que hacer un ambiente válido, feedback loop corto, información descubrible en tandas, permitir la especialización increméntal, práctica con memoria, descubriento incremental de los unknowns (observar lo que no se), memoria de actividad, versionamiento, marcadores de progreso, aprendizaje incremental
 
 #
 
-La capa de datos debería estar abstraída y permitir rápidamente la adopción de nuevas técnicas de almacenamiento que sean efectivas para el caso de uso requerido 
+La capa de datos debería estar abstraída y permitir rápidamente la adopción de nuevas técnicas de almacenamiento que sean efectivas para el caso de uso requerido
 
-# 
+#
 
-Data pipeline normalmente involucra tomar datos transformarlos en diferentes formatos y luego desplegarlos en alguna plataforma que los exponga, sobre esta base luego se pueden crear aplicaciones 
+Data pipeline normalmente involucra tomar datos transformarlos en diferentes formatos y luego desplegarlos en alguna plataforma que los exponga, sobre esta base luego se pueden crear aplicaciones
 
 #
 
 Escribir libro acerca de el capital, lo capitalizable y cómo capitalizar
 
 #
-Buscador de alimentos con sentido, que indique cómo se compara el contenido x de vitamina con el mínimo diario, que permita armar una compensación alimenticia dados unos alimentos para balancear el contenido;, que permita comparar un alimento vs otro 
+
+Buscador de alimentos con sentido, que indique cómo se compara el contenido x de vitamina con el mínimo diario, que permita armar una compensación alimenticia dados unos alimentos para balancear el contenido;, que permita comparar un alimento vs otro
+
 #
 
 El arquitecto de Salomón significa el conocimiento de él como con una maestría absoluta
 
-# 
-Mono repo en realidad significa reutilizaciok y cohesión 
-# 
+#
+
+Mono repo en realidad significa reutilizaciok y cohesión
+
+#
 
 Caímos en la trampa de pensar que cualquiera puede emprender, pero lo cierto es que hace falta o ser un dios en el capital, o en el negocio, o en la ingeniería, o en ambos, de otra forma no serás successful
 
 #
 
-Entendí la importancia de los sistemas hypervisor como openrc y systemd 
-# 
+Entendí la importancia de los sistemas hypervisor como openrc y systemd
+
+#
 
 Entendí un poco sobre cómo funciona la declaratividsd en kubernetes, sería bueno algo así para ci/cd, que diga que siempre quiere x pod con la última versión de la imagen y se asegure que así será, en vez de esperar un deploy imperativo que el se asegure de eso
 
 #
 
-Configuración aparte de el servido, buena práctica de kubernetes 
+Configuración aparte de el servido, buena práctica de kubernetes
 
-# 
+#
 
-Preparar antes de salir a trotar los materiales para el desayuno, así estará más rápido y no tendré que mojarme ni meter las manos a la nevera 
+Preparar antes de salir a trotar los materiales para el desayuno, así estará más rápido y no tendré que mojarme ni meter las manos a la nevera
 
 #
 
