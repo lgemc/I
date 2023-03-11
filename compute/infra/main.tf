@@ -9,6 +9,10 @@ module "compute" {
   main_vpc_id               = module.vpc.main_vpc_id
 }
 
+module "iam" {
+  source = "./iam"
+}
+
 module "vpc" {
   source                 = "./vpc"
   main_security_group_id = module.compute.main_security_group_id
