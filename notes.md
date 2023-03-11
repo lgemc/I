@@ -1,12 +1,57 @@
 #
 Para capitalizar algo debes manejarlo a la perfección, y este no debe comerte mucho tiempo, junta personas que estén interesadas y únelos a tu causa como Linux, ten artefactos que permitan que otros te descubran y aprendan de ti 
-#
 
 #
 
-#
+No es lo que yo deseo de otros si no revisar si es lo correcto, y cuál es el ambiente pra lograrlo, y analizar la realidad en su conjunto y no solo en el mal sentimiento
 
 #
+
+La alimentación de las clases bajas psoblemente derive también en su manipulabilidad, sacarlos de la realidad con alimentos ricos en grasas y azúcares, musica, drogas, televisión etc 
+
+La pregunta es cómo capitalizar esto donde todos salgan ganando 
+
+#
+
+
+
+#
+
+
+#
+
+
+
+#
+
+
+
+#
+
+
+
+#
+
+
+
+#
+
+La diferencia entre riqueza y pobreza está en un estado mental de yo quiero y yo puedo, o debo organizar para, a yo hago y yo deseo sin un panorama claro para concretarlo 
+
+Yo se o puedo aprender o quiero aprender o entiendo como aprender a yo no se y espero que me enseñen 
+
+Este estado se alcanza dado un ejercicio económico de supeditación en donde el individuo es despojado como tal de su condición 
+
+#
+
+Los antibióticos acaban también con la flora intestinal haciendo más difícil la regeneración de estos 
+
+#
+
+Investigar sobre los laboratorios que venden medicina, para saber cuáles son buenos y cuáles no
+
+#
+Por que otra razón es el maestro de artes marciales maestro si no es por su repetición de miles de veces practicar sus técnicas 
 
 #
 
