@@ -7,8 +7,6 @@ metadata:
 spec:
   type: ClusterIP 
   ports:
-    - name: db
-      port: 5432
     - name: web
       port: 3000 
   selector:
