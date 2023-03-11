@@ -5,8 +5,9 @@ provider "aws" {
 module "compute" {
   source = "./compute"
 
-  main_network_interface_id = module.vpc.main_network_interface_id
-  main_vpc_id               = module.vpc.main_vpc_id
+  main_network_interface_id  = module.vpc.main_network_interface_id
+  main_instance_profile_name = module.iam.main_instance_profile_name
+  main_vpc_id                = module.vpc.main_vpc_id
 }
 
 module "iam" {
