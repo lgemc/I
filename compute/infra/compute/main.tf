@@ -1,7 +1,8 @@
 module "ec2" {
-  source                    = "./ec2"
-  main_network_interface_id = var.main_network_interface_id
-  main_security_group_id    = module.security_groups.main_security_group_id
+  source                     = "./ec2"
+  main_network_interface_id  = var.main_network_interface_id
+  main_instance_profile_name = var.main_instance_profile_name
+  main_security_group_id     = module.security_groups.main_security_group_id
 }
 
 module "security_groups" {
