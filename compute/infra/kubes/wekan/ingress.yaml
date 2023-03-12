@@ -2,7 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress
-  namespace: wekan 
   annotations:
     kubernetes.io/ingress.class: "nginx" 
     nginx.ingress.kubernetes.io/proxy-body-size: 20m
@@ -10,10 +9,10 @@ metadata:
 spec:
   tls:
     - hosts:
-      - projects.atelier.run
+      - kanban.atelier.run
       secretName: projects-atelier-key
   rules:
-    - host: projects.atelier.run
+    - host: kanban.atelier.run
       http:
         paths:
           - path: /
@@ -22,4 +21,4 @@ spec:
               service:
                 name: wekan
                 port:
-                  number: 8080
+                  number: 8080 

@@ -22,7 +22,7 @@ spec:
             - configMapRef:
                 name: gogs-db-config
           volumeMounts:
-            - mountPath: /var/lib/postgrsql/data
+            - mountPath: /var/lib/postgresql/data
               name: gogs-db
         - name: gogs
           image: gogs/gogs:0.13

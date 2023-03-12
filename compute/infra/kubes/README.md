@@ -48,3 +48,19 @@ Permissions needed by your cluster are as follows
 A claim can exists without a volume definition
 
 Persisten volume claims can be configured to only claims when are binded.
+
+# About postgres
+
+When a volume is used, you should pass a custom folder to get data sotored
+
+Supposing you have a volume claims called `my-volume`, you should configure the
+mount point at `/var/postgresql/data` and `PG_DATA` var at `/var/postgresql/data/my-postgres`,
+because postgres did't allow have `/var/postgersql/data` folder as a direct mount point
+
+# About secrets caveats
+
+When you are generating secrets with base64 encoded commands, you should run
+`echo -n your-value-here | base64` instead `echo your-value-here | base64` because
+by default echo adds a break line (`\n`), `-n` argument prevents it.
+
+For more information common related issues see [this link](https://stackoverflow.com/questions/49155199/debugging-an-unnecessary-newline-character-in-a-kubernetes-secret).
