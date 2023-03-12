@@ -14,13 +14,19 @@ module "iam" {
   source = "./iam"
 }
 
+module "keys" {
+  source = "./keys"
+}
+
 module "vpc" {
   source                 = "./vpc"
   main_security_group_id = module.compute.main_security_group_id
 }
 
 module "efs" {
-  source = "./efs"
+  source                 = "./efs"
+  main_security_group_id = module.compute.main_security_group_id
+  main_subnet_id         = module.vpc.main_subnet_id
 }
 
 output "main_eip_address" {

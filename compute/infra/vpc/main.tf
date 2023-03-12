@@ -33,3 +33,7 @@ output "main_vpc_id" {
 output "main_network_interface_id" {
   value = module.network_interface.main_node_interface_id
 }
+
+output "main_subnet_id" {
+  value = module.subnet.main_subnet_id
+}
