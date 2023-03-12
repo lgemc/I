@@ -1,7 +1,7 @@
-resource "aws_iam_policy" "ebs_manager" {
-  name        = "ebs-manager"
+resource "aws_iam_policy" "manage_ebs" {
+  name        = "manage-ebs"
   path        = "/"
-  description = "EBS manager to create, delte or modify ebs"
+  description = "Allow manage EBS storage"
 
   policy = jsonencode({
     Version : "2012-10-17",
@@ -31,6 +31,6 @@ resource "aws_iam_policy" "ebs_manager" {
   })
 }
 
-output "ebs_manager_policy_arn" {
-  value = aws_iam_policy.ebs_manager.arn
+output "manage_ebs_policy" {
+  value = aws_iam_policy.manage_ebs.arn
 }
