@@ -10,7 +10,8 @@ module "instance_profiles" {
 module "roles" {
   source = "./roles"
 
-  ebs_manager_policy_arn = module.policies.ebs_manager_policy_arn
+  ebs_manager_policy_arn = module.policies.manage_ebs_policy
+  efs_manager_policy_arn = module.policies.manage_efs_policy
 }
 
 output "main_instance_profile_name" {

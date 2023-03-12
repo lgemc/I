@@ -19,6 +19,14 @@ module "vpc" {
   main_security_group_id = module.compute.main_security_group_id
 }
 
+module "efs" {
+  source = "./efs"
+}
+
 output "main_eip_address" {
   value = module.compute.main_eip_address
+}
+
+output "main_efs_file_system_id" {
+  value = module.efs.main_efs_file_system_id
 }

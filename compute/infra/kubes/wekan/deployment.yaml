@@ -57,7 +57,12 @@ spec:
         volumeMounts:
           - name: "data"
             mountPath: "/data/db"
+          - name: "logs"
+            mountPath: "/var/log/mongodb"
       volumes:
         - name: "data"
           persistentVolumeClaim:
             claimName: wekan-db 
+        - name: "logs"
+          persistentVolumeClaim:
+            claimName: logs
