@@ -9,12 +9,13 @@ doas -u root <<command>>
 Add to /etc/fstab this line
 
 ```bash
-cgroup /sys/fs/cgroup cgroup defaults 0 0
+echo /etc/fstab >> cgroup /sys/fs/cgroup cgroup defaults 0 0
 ```
 
 Add to /etc/cgconfig.conf this config
 
 ```bash
+cat > /etc/cgconfig.conf <<EOF
 mount {
   cpuacct = /cgroup/cpuacct;
   memory = /cgroup/memory;
@@ -25,12 +26,15 @@ mount {
   cpuset = /cgroup/cpuset;
   cpu = /cgroup/cpu;
 }
+EOF
 ```
 
 On file /etc/update-extlinux.conf add or set this config
 
+**Note: add new config params without delete old ones**
+
 ```bash
-default_kernel_opts="pax_nouderef quiet rootfstype=ext4 cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
+default_kernel_opts="pax_nouderef quiet rootfstype=ext4 cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory"
 ```
 
 Refresh your boot loader
@@ -60,7 +64,7 @@ Add next content to /etc/profile.d/cni.sh file
 
 ```bash
 #!/bin/sh
-export PATH=$PATH:/usr/share/cni-plugins/bin
+echo "export PATH=\$PATH:/usr/share/cni-plugins/bin" > /etc/profile.d/cni.sh
 ```
 
 Install iptables
@@ -72,23 +76,13 @@ doas -u root apk add iptables
 Download k3s distribution
 
 ```bash
-wget https://github.com/rancher/k3s/releases/download/v1.26.2-rc1%2Bk3s1/k3s # change to k3s-arm64 if needed
-mv k3s-arm64 k3s
-doas -u root mv k3s /usr/bin
-doas -u root chmod +x /usr/bin/k3s
+curl -sfL https://get.k3s.io | sh -
 ```
 
 # Add it to startup
 
-Add service file
-
 ```bash
-doas -u root vim /etc/init.d/k3s
-```
-
-With content
-
-```bash
+cat > /etc/init.d/k3s <<EOF
 #!/sbin/openrc-run
 
 depend() {
@@ -112,12 +106,13 @@ set -o allexport
 if [ -f /etc/environment ]; then source /etc/environment; fi
 if [ -f /etc/rancher/k3s/k3s.env ]; then source /etc/rancher/k3s/k3s.env; fi
 set +o allexport
+EOF
 ```
 
 Convert file to executable
 
 ```bash
-doas -u root chmod +x /etc/init.d/k3sdoas -u root chmod +x /etc/init.d/k3s
+doas -u root chmod +x /etc/init.d/k3s
 ```
 
 Add to default run level (on each startup)
