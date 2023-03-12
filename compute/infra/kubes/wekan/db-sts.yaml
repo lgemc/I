@@ -2,40 +2,19 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   labels:
-    app: wekan 
-  name: wekan
+    app: wekan-db
+  name: wekan-db
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wekan
+      app: wekan-db
   template:
     metadata:
       labels:
-        app: wekan
+        app: wekan-db
     spec:
       containers:
-      - image: wekanteam/wekan 
-        name: web
-        ports:
-          - containerPort: 8080
-            name: web
-        env:
-        - name: MONGO_URL
-          valueFrom:
-            secretKeyRef:
-              name: wekan-db-credentials
-              key: url
-        - name: PORT
-          valueFrom:
-            configMapKeyRef:
-                name: wekan-web-config
-                key: port
-        - name: ROOT_URL
-          valueFrom:
-            configMapKeyRef:
-              name: wekan-web-config
-              key: rootURL
       - image: mongo:5.0.15
         name: mongo
         ports:

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wekan-db
+  labels:
+    app: wekan-db
+spec:
+  type: ClusterIP
+  selector:
+    app: wekan-db
+  ports:
+    - name: http
+      protocol: TCP
+      port: 27017
+      targetPort: 27017
