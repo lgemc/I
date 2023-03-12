@@ -1,5 +1,11 @@
 #
 
+Hipotesis: una dieta alta en hidratos de carbono + proteinas y corta en micronutrientes escenciales
+causa dificultad para concentrarse en tareas que necesitan atencion por largos periodos de tiempo,
+ejemplo aprender a escribir o hacer planas
+
+#
+
 Para capitalizar algo debes manejarlo a la perfección, y este no debe comerte mucho tiempo, junta personas que estén interesadas y únelos a tu causa como Linux, ten artefactos que permitan que otros te descubran y aprendan de ti
 
 #
@@ -20,6 +26,15 @@ standares para optimizar la recordacion de codigo y tampoco hace que se involucr
 neruonas de memoria para descubrir el software, en otras palabras nos hace escribir peor
 codigo y ejercitar menos el cerebro al codificar, lo cual hace que no entendamos realmente
 el codigo
+
+#
+
+La confluencia de beneficios como mecanismo de dinamizacion y construccion de futuro
+
+En este momento, hay un mundo ya construido que esta funcionando, es un sistema dinamico
+andando, la forma de modificarlo para bien es haciendo que muchos elementos ya existentes
+confluyan y obtengan beneficio, y de alli es de donde surge el valor del que puede ser fundada
+una institucion
 
 #
 
