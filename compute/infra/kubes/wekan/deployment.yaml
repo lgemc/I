@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   labels:
     app: wekan 
@@ -9,7 +9,6 @@ spec:
   selector:
     matchLabels:
       app: wekan
-  strategy: {}
   template:
     metadata:
       labels:
@@ -37,9 +36,8 @@ spec:
             configMapKeyRef:
               name: wekan-web-config
               key: rootURL
-      - image: mongo
+      - image: mongo:5.0.15
         name: mongo
-        args: ["--dbpath", "/data/db"]
         ports:
           - containerPort: 27017
             name: db
