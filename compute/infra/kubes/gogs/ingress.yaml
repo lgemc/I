@@ -19,6 +19,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: gogs
+                name: gogs-web
                 port:
                   number: 3000

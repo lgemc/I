@@ -1,16 +1,16 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet 
 metadata:
-  name: gogs
+  name: gogs-db
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gogs
+      app: gogs-db
   template:
     metadata:
       labels:
-        app: gogs
+        app: gogs-db
     spec:
       containers:
         - name: postgres
@@ -24,23 +24,7 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: gogs-db
-        - name: gogs
-          image: gogs/gogs:0.13
-          ports:
-          - containerPort: 22
-            name: ssh
-          - containerPort: 3000
-            name: http
-          env:
-          - name: SOCAT_LINK
-            value: "false"
-          volumeMounts:
-          - name: gogs
-            mountPath: /data
       volumes:
         - name: gogs-db
           persistentVolumeClaim:
             claimName: gogs-db-claim
-        - name: gogs
-          persistentVolumeClaim:
-            claimName: gogs-claim
