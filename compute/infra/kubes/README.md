@@ -1,3 +1,23 @@
+# Helm
+
+It is a repo manager
+
+Some times you want download code to your code base, sometimes not
+
+If you want download code and add it to your code base execute
+
+```bash
+helm fetch aws-ebs-csi-driver/aws-ebs-csi-driver --untar
+```
+
+It will create a folder called `aws-ebs-scs-driver`
+
+To install execute
+
+```bash
+helm install aws-ebs-csi-driver aws-ebs-csi-driver
+```
+
 # Troubleshooting
 
 - To see pod logs execute `kubectl logs {{pod-name}}`
@@ -64,3 +84,13 @@ When you are generating secrets with base64 encoded commands, you should run
 by default echo adds a break line (`\n`), `-n` argument prevents it.
 
 For more information common related issues see [this link](https://stackoverflow.com/questions/49155199/debugging-an-unnecessary-newline-character-in-a-kubernetes-secret).
+
+# About dangers of have database and server in same pod
+
+When pod is starting, race conditions can be broke pod behavior, if back start before
+database server it will fail when it try to connect to server
+
+# About log volume
+
+Pods starts and ends, its data is ephemereal, you should centralize that in a shared
+file storage to prevent deletions
