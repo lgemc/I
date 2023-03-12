@@ -11,6 +11,16 @@ resource "aws_security_group" "main_security_group" {
     ipv6_cidr_blocks = ["::/0"]
   }
 
+  egress {
+    description = "EFS mount target"
+    from_port   = 2049
+    to_port     = 2049
+    protocol    = "tcp"
+    cidr_blocks = ["10.0.0.0/28"]
+  }
+
+
+
   ingress {
     description      = "Allow http"
     from_port        = 0
