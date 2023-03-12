@@ -23,7 +23,12 @@ el codigo
 
 #
 
+Algo interesante es expermientar con software extensible via plugins
+Por ejemplo como aniadir a wekan temas y soportarlos nativamente?
+
 #
+
+Interesante opentelemetry and dtrace
 
 #
 
