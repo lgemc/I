@@ -1,8 +1,9 @@
 module "ec2" {
-  source                     = "./ec2"
-  main_network_interface_id  = var.main_network_interface_id
-  main_instance_profile_name = var.main_instance_profile_name
-  main_security_group_id     = module.security_groups.main_security_group_id
+  source                       = "./ec2"
+  main_network_interface_id    = var.main_network_interface_id
+  child_0_network_interface_id = var.child_0_network_interface_id
+  main_instance_profile_name   = var.main_instance_profile_name
+  main_security_group_id       = module.security_groups.main_security_group_id
 }
 
 module "security_groups" {
@@ -14,7 +15,7 @@ module "security_groups" {
 module "eip" {
   source = "./eip"
 
-  main_node_id = module.ec2.main_node_ip
+  main_node_id = module.ec2.main_node_id
 }
 
 output "main_eip_address" {

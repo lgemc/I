@@ -10,6 +10,7 @@ resource "aws_default_network_acl" "default" {
     to_port    = 0
   }
 
+  subnet_ids = [var.main_subnet_id]
   egress {
     protocol   = -1
     rule_no    = 100

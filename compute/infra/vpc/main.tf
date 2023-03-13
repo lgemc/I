@@ -1,6 +1,7 @@
 module "vpc" {
   source              = "./vpc"
   main_route_table_id = module.route_table.main_route_table_id
+  main_subnet_id      = module.subnet.main_subnet_id
 }
 
 module "subnet" {
@@ -32,6 +33,10 @@ output "main_vpc_id" {
 
 output "main_network_interface_id" {
   value = module.network_interface.main_node_interface_id
+}
+
+output "child_0_network_interface_id" {
+  value = module.network_interface.child_0_node_interface_id
 }
 
 output "main_subnet_id" {

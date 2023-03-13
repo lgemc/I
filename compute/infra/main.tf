@@ -1,3 +1,10 @@
+terraform {
+  backend "s3" {
+    bucket = "atelier-terraform-state"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+  }
+}
 provider "aws" {
   region = "us-east-1"
 }
@@ -5,17 +12,16 @@ provider "aws" {
 module "compute" {
   source = "./compute"
 
-  main_network_interface_id  = module.vpc.main_network_interface_id
+  main_vpc_id = module.vpc.main_vpc_id
+
+  main_network_interface_id    = module.vpc.main_network_interface_id
+  child_0_network_interface_id = module.vpc.child_0_network_interface_id
+
   main_instance_profile_name = module.iam.main_instance_profile_name
-  main_vpc_id                = module.vpc.main_vpc_id
 }
 
 module "iam" {
   source = "./iam"
-}
-
-module "keys" {
-  source = "./keys"
 }
 
 module "vpc" {
