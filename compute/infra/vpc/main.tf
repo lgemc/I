@@ -35,6 +35,10 @@ output "main_network_interface_id" {
   value = module.network_interface.main_node_interface_id
 }
 
+output "etcd_interface_id" {
+  value = module.network_interface.etcd_node_interface_id
+}
+
 output "child_0_network_interface_id" {
   value = module.network_interface.child_0_node_interface_id
 }

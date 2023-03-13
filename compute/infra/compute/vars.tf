@@ -13,3 +13,7 @@ variable "main_vpc_id" {
 variable "main_instance_profile_name" {
   type = string
 }
+
+variable "etcd_network_interface_id" {
+  type = string
+}

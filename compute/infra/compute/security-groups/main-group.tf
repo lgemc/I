@@ -31,11 +31,46 @@ resource "aws_security_group" "main_security_group" {
   }
 
   ingress {
+    description = "Allow k3s server join"
+    from_port   = 0
+    to_port     = 6443
+    protocol    = "tcp"
+    cidr_blocks = ["10.0.0.0/28"]
+  }
+
+  egress {
+    description = "Allow k3s server join"
+    from_port   = 0
+    to_port     = 6443
+    protocol    = "tcp"
+    cidr_blocks = ["10.0.0.0/28"]
+  }
+
+
+  ingress {
     description      = "Allow kubectl"
     from_port        = 0
     to_port          = 6443
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
+  egress {
+    description      = "Allow etcd"
+    from_port        = 0
+    to_port          = 2379
+    protocol         = "tcp"
+    cidr_blocks      = ["10.0.0.0/28"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
+
+  ingress {
+    description      = "Allow etcd"
+    from_port        = 0
+    to_port          = 2379
+    protocol         = "tcp"
+    cidr_blocks      = ["10.0.0.0/28"]
     ipv6_cidr_blocks = ["::/0"]
   }
 
