@@ -1,3 +1,7 @@
+# Aprendizaje de vida
+
+Nunca tengas un store dentro de un servidor fisico, siempre sacalo a un servicio externo con su propio volumen
+
 #
 
 Hipotesis: una dieta alta en hidratos de carbono + proteinas y corta en micronutrientes escenciales

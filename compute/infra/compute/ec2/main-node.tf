@@ -5,6 +5,12 @@ resource "aws_instance" "main_node" {
 
   key_name = "lgmc"
 
+  root_block_device {
+    delete_on_termination = false
+    volume_size           = 20
+    volume_type           = "standard"
+  }
+
   iam_instance_profile = var.main_instance_profile_name
   network_interface {
     network_interface_id = var.main_network_interface_id
@@ -16,6 +22,6 @@ resource "aws_instance" "main_node" {
   }
 }
 
-output "main_node_ip" {
+output "main_node_id" {
   value = aws_instance.main_node.id
 }
