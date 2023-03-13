@@ -1,7 +1,7 @@
-resource "aws_instance" "child_0_node" {
+resource "aws_instance" "etcd" {
   ami = "ami-0fec2c2e2017f4e7b"
 
-  instance_type = "t2.small"
+  instance_type = "t2.nano"
 
   key_name = "lgmc"
 
@@ -13,15 +13,15 @@ resource "aws_instance" "child_0_node" {
 
   iam_instance_profile = var.main_instance_profile_name
   network_interface {
-    network_interface_id = var.child_0_network_interface_id
+    network_interface_id = var.etcd_network_interface_id
     device_index         = 0
   }
   tags = {
     "Service" = "main"
-    "Name"    = "child_0_node"
+    "Name"    = "etcd_node"
   }
 }
 
-output "child_0_node_id" {
-  value = aws_instance.child_0_node.id
+output "etcd_node_id" {
+  value = aws_instance.etcd.id
 }
