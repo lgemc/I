@@ -1,3 +1,18 @@
+# 
+
+Este mundo es un flujo, las afirmaciones lo bloquean, las preguntas le permiten y le ayudan a fluir.
+
+Igual los enuncados en forma de sugerencia o hipotesis.
+
+Quiza un paso importante paso a un lenguaje mas efectivo es pasar de la afirmacion a la pregunta.
+
+# 
+
+Me di cuenta que no soy normal, mi capacidad para resolver problemas y hacer asociaciones no es comun, al parecer tengo el sistema
+nervioso super desarrollado, lo cual implica que debo tener mas cuidado a la hora de recibir estimulos. Tanto alimenticios, como sonoros,
+resulta que soy mucho mas exitable en terminos nerviosos, de ahi parte mi gran inteligencia pero si no se tiene cuidado esto puede
+jugarme en contra. Para sacarle el maximo provecho debere sub exitarlo lo mas que pueda
+
 # Aprendizaje de vida
 
 Nunca tengas un store dentro de un servidor fisico, siempre sacalo a un servicio externo con su propio volumen
