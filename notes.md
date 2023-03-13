@@ -1,3 +1,11 @@
+#
+
+Lo que siempre sobrevive de una aplicacion son los datos, lo mas importante a la hora de la reliability 
+son los storage, alli recide la capacidad de recuperarse de los errores. El procesamiento es reemplazable
+
+Esto pasa tambien con nuestras acciones, el procesamiento especifico momentaneo es futil y reemplazable,
+sin embargo la obra, agrega mas valor, ensenia mas, y perdura mas.
+
 # 
 
 Este mundo es un flujo, las afirmaciones lo bloquean, las preguntas le permiten y le ayudan a fluir.
