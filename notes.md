@@ -1,5 +1,37 @@
 #
 
+Toda estrategia necesita una estrategia energetica, proyectos de vida, proyectos comunitarios,
+sociales, actividades diarias como hacer ejercicio o prepararse para algun evento, todo 
+en el mundo se puede reducir a energia, y para hacer necesitas planear, medir, organizar 
+y ejecutar, una de las formas mas importantes de energia es el dinero, sin embargo la clave
+es la energia personal y esta esta dada principalmente por los alimentos que ingerimos, cuando
+y con que frecuencia. Importa tambien la calidad de estos, biodisponibilidad y eficiencia.
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+#
+
 Lo que siempre sobrevive de una aplicacion son los datos, lo mas importante a la hora de la reliability 
 son los storage, alli recide la capacidad de recuperarse de los errores. El procesamiento es reemplazable
 
