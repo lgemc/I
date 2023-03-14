@@ -90,7 +90,28 @@ For more information common related issues see [this link](https://stackoverflow
 When pod is starting, race conditions can be broke pod behavior, if back start before
 database server it will fail when it try to connect to server
 
-# About log volume
+# About log volume (needs more work)
 
 Pods starts and ends, its data is ephemereal, you should centralize that in a shared
-file storage to prevent deletions
+file storage to prevent deletions.
+
+# About storage
+
+All kubernetes desired storage is saved to `etcd`, also node registry etc, that is the main
+component across all components of kubernets, due to this its storage should be gracefully
+saved, replicated, and snapshoted in order to get a reliable cluster.
+
+# Abou external node creation.
+
+You should automate two thinkgs:
+
+- Cluster environment compute (network, elastic ips, security rules, etc)
+- Node creation and registration.
+
+## Cluster environment compute
+
+You can get it working with terraform
+
+## Node creation and registration
+
+You can create, scale up and down using ansible.
