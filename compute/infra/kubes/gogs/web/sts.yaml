@@ -7,6 +7,7 @@ spec:
   selector:
     matchLabels:
       app: gogs-web
+  serviceName: gogs-web
   template:
     metadata:
       labels:

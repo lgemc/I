@@ -16,7 +16,7 @@ resource "aws_security_group" "main_security_group" {
     from_port   = 2049
     to_port     = 2049
     protocol    = "tcp"
-    cidr_blocks = ["10.0.0.0/28"]
+    cidr_blocks = ["192.168.0.0/28"]
   }
 
 
@@ -35,7 +35,7 @@ resource "aws_security_group" "main_security_group" {
     from_port   = 0
     to_port     = 6443
     protocol    = "tcp"
-    cidr_blocks = ["10.0.0.0/28"]
+    cidr_blocks = ["192.168.0.0/28"]
   }
 
   egress {
@@ -43,9 +43,17 @@ resource "aws_security_group" "main_security_group" {
     from_port   = 0
     to_port     = 6443
     protocol    = "tcp"
-    cidr_blocks = ["10.0.0.0/28"]
+    cidr_blocks = ["192.168.0.0/28"]
   }
 
+  ingress {
+    description      = "Allow metrics server" # for more information see https://stackoverflow.com/questions/69221003/k3s-metrics-server-doesnt-work-for-worker-nodes
+    from_port        = 0
+    to_port          = 10250
+    protocol         = "tcp"
+    cidr_blocks      = ["192.168.0.0/28"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
 
   ingress {
     description      = "Allow kubectl"
@@ -61,7 +69,7 @@ resource "aws_security_group" "main_security_group" {
     from_port        = 0
     to_port          = 2379
     protocol         = "tcp"
-    cidr_blocks      = ["10.0.0.0/28"]
+    cidr_blocks      = ["192.168.0.0/28"]
     ipv6_cidr_blocks = ["::/0"]
   }
 
@@ -70,7 +78,7 @@ resource "aws_security_group" "main_security_group" {
     from_port        = 0
     to_port          = 2379
     protocol         = "tcp"
-    cidr_blocks      = ["10.0.0.0/28"]
+    cidr_blocks      = ["192.168.0.0/28"]
     ipv6_cidr_blocks = ["::/0"]
   }
 
@@ -79,25 +87,24 @@ resource "aws_security_group" "main_security_group" {
     from_port        = 0
     to_port          = 443
     protocol         = "tcp"
-    cidr_blocks      = ["0.0.0.0/0"]
+    cidr_blocks      = ["0.0.0.0/0", "192.168.0.0/28"]
     ipv6_cidr_blocks = ["::/0"]
   }
 
   ingress {
-    description      = "Allow install packages"
+    description      = "Allow intra node communications"
     from_port        = 0
-    to_port          = 443
+    to_port          = 0
     protocol         = "tcp"
-    cidr_blocks      = ["10.0.0.0/28"]
+    cidr_blocks      = ["192.168.0.0/28"]
     ipv6_cidr_blocks = ["::/0"]
   }
-
   egress {
-    description      = "Allow install packages"
+    description      = "Allow intra node communications"
     from_port        = 0
-    to_port          = 443
+    to_port          = 0
     protocol         = "tcp"
-    cidr_blocks      = ["10.0.0.0/28"]
+    cidr_blocks      = ["192.168.0.0/28"]
     ipv6_cidr_blocks = ["::/0"]
   }
 }

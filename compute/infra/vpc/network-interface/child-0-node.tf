@@ -1,7 +1,7 @@
 resource "aws_network_interface" "child_0_node_interface" {
   subnet_id = var.main_subnet_id
 
-  private_ips = ["10.0.0.12"]
+  private_ips = ["192.168.0.12"]
 
   tags = {
     "Service" = "main"
