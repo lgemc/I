@@ -1,6 +1,6 @@
 resource "aws_subnet" "main_subnet" {
   vpc_id            = var.main_vpc_id
-  cidr_block        = "10.0.0.0/28"
+  cidr_block        = "192.168.0.0/28"
   availability_zone = "us-east-1d"
   tags = {
     "Name"    = "main_subnet"

@@ -27,7 +27,7 @@ resource "aws_main_route_table_association" "main" {
 }
 
 resource "aws_vpc" "main_vpc" {
-  cidr_block = "10.0.0.0/24"
+  cidr_block = "192.168.0.0/24"
 
 
   tags = {

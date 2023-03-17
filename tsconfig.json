@@ -1,6 +1,6 @@
 {
     "exclude": ["computation/cellphones/**", "node_modules", "dist"],
-    "include": ["./**/*.ts", "./**/*.js", "learn/books/books.md"],
+    "include": ["./**/*.ts", "./**/*.js", "learn/books/books.md", "compute/ansible/etcd/env.j2"],
     "compilerOptions": {
         "baseUrl": "../",
         "outDir": "./dist/",
