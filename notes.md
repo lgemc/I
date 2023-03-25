@@ -1,5 +1,6 @@
 #
 
+A veces la mejor solucion para git lfs es desinstalarlo y volverlo a instalar...
 #
 
 #
