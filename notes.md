@@ -1,3 +1,35 @@
+#
+
+#
+
+#
+
+#
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+
+#
+
+#
+
 # 
 
 Buscar sobre antioxidantes
@@ -47,30 +79,7 @@ y ejecutar, una de las formas mas importantes de energia es el dinero, sin embar
 es la energia personal y esta esta dada principalmente por los alimentos que ingerimos, cuando
 y con que frecuencia. Importa tambien la calidad de estos, biodisponibilidad y eficiencia.
 
-#
 
-
-#
-
-
-#
-
-
-#
-
-
-#
-
-
-#
-
-
-#
-
-
-#
-
-#
 
 Lo que siempre sobrevive de una aplicacion son los datos, lo mas importante a la hora de la reliability 
 son los storage, alli recide la capacidad de recuperarse de los errores. El procesamiento es reemplazable
@@ -143,13 +152,6 @@ Por ejemplo como aniadir a wekan temas y soportarlos nativamente?
 #
 
 Interesante opentelemetry and dtrace
-
-#
-
-#
-
-#
-
 #
 
 La diferencia entre riqueza y pobreza está en un estado mental de yo quiero y yo puedo, o debo organizar para, a yo hago y yo deseo sin un panorama claro para concretarlo
