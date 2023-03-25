@@ -38,7 +38,7 @@ Encription can be performed via kms
 
 Cluster configs to perform encription and decription should be performed via cluster config
 
-Also see [next video](https://archive.eksworkshop.com/beginner/191_secrets/)
+Also see [next video](https://www.eksworkshop.com/docs/security/sealed-secrets/)
 # Side notes
 
 - Creation takes a while, most slow creation process is control plane one
