@@ -3,7 +3,7 @@
 A veces la mejor solucion para git lfs es desinstalarlo y volverlo a instalar...
 #
 
-
+Aprendi a desplegar un cluster eks de la forma sencillita, con eksctl
 
 #
 
