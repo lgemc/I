@@ -6,6 +6,7 @@ metadata:
   name: wekan-web
 spec:
   replicas: 1
+  serviceName: wekan-web
   selector:
     matchLabels:
       app: wekan-web
