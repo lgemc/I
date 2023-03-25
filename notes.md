@@ -3,19 +3,14 @@
 A veces la mejor solucion para git lfs es desinstalarlo y volverlo a instalar...
 #
 
-#
-
-#
-#
 
 
 #
 
 
-#
-
 
 #
+
 
 
 #
@@ -29,8 +24,26 @@ A veces la mejor solucion para git lfs es desinstalarlo y volverlo a instalar...
 
 #
 
+Volví a abrir mi kanban 
+
 #
 
+Me di cuenta que los autos en movimiento son un activador tremendo de el deseo de escuchar música
+
+#
+
+He vuelto a escuchar música, sin embargo lo mantengo al límite, Máximo tres canciones seguidas
+
+#
+
+La abuela se quebró una mano, mande 100k para apoyar a cielo que es quien la va a acompañar 
+
+#
+
+En Pensilvania visite a la familia y estuvo chévere, hablé con doña Marleny y entendí mucha parte de su vida lo cual fue bastante agradable, igual sobre la vida de Norvey y yudier 
+
+#
+Configure gogs 
 # 
 
 Buscar sobre antioxidantes
