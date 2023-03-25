@@ -1,3 +1,43 @@
+# 
+
+Buscar sobre antioxidantes
+
+#
+
+Fui a Pensilvania y visité a gran parte de la familia
+
+#
+
+Entendí quien es Marleny Herrera 
+
+
+# 
+
+Debo ayudar a Norvey posiblemente, almenos quiero 
+
+#
+
+Cada vez le veo más importancia a la convergencia de intereses, este mundo es un mundo dinámico con una existencia, esto es, está compuesto por multitud de vectores y magnitudes, que pueden algunos converger o no, y entre los vectores existen acciones recíprocas. La pregunta es donde posicionar tu vector, que alinee varios vectores antes no relacionados y puedas unirte al flujo de forma eficaz.
+
+#
+
+Tu conocimiento sobre el mundo se ampliará en la medida que más vectores sean conocidos por ti y más mapa de la realidad tengas.
+
+#
+
+Para asegurar tu éxito a largo plazo debes tener participación en muchos vectores, y no deberás contradecir vectores muy grandes ni compartir dirección con uno así ya que este podría borrarte
+
+#
+
+
+Este mundo es un mundo energético económico, y también tiene una dimensión de dirección económica que rige gran parte de su flujo y evolución, todos los preconfiguraciones existentes de la economía actual y direcciones y personas relacionadas actúan como personalizaciones de el campo probabilístico de estas, igual todas las demás personas 
+
+#
+
+Es probable que mi madre y yo tengamos a veces falta de fuerza por un mal balance en la flora microbiana y por ende mal funcionamiento de la energía diaria, esto por alguna predisposición sumado a hábitos incorrectos de dieta
+
+Es probable que cada persona tenga una dieta distinta apta para su micro flora intestinal y de ahí dependa mucha de su energía 
+
 #
 
 Toda estrategia necesita una estrategia energetica, proyectos de vida, proyectos comunitarios,
