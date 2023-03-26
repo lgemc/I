@@ -3,18 +3,22 @@
 A veces la mejor solucion para git lfs es desinstalarlo y volverlo a instalar...
 #
 
+Si C es el conjunto de situaciones que se desean aprender, existirán un conjunto de cx pertenecientes a C que ayudaran a controlar las situaciones representadas por C
+
+La forma de aprender es encontrar los cx más óptimos para descubrir los patrones de C, y a más cx resueltos mayor será la aproximación al conjunto C, denotaremos a este conjunto el conjunto aprendido #C
+
+#
+
+Apto https://www.constructorabolivar.com/proyectos-vivienda/cali/arandanos-vivero-parque-residencial
 
 
 #
 
-
-
-#
-
-
+Conocí el parque de el perro en una salida chévere con Mauro y herrera 
 
 #
 
+Entendí que en latam las cosas aon distintas desde un punto de vista user adquisition , por ejemplo DiDi se fue de tienda en tienda registrándolos para DiDi food, así funciona LATAM en vez de ser self discoverer y self serve 
 
 #
 
