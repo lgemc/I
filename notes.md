@@ -6,6 +6,7 @@ A veces la mejor solucion para git lfs es desinstalarlo y volverlo a instalar...
 Si C es el conjunto de situaciones que se desean aprender, existirán un conjunto de cx pertenecientes a C que ayudaran a controlar las situaciones representadas por C
 
 La forma de aprender es encontrar los cx más óptimos para descubrir los patrones de C, y a más cx resueltos mayor será la aproximación al conjunto C, denotaremos a este conjunto el conjunto aprendido #C
+Aprendi a desplegar un cluster eks de la forma sencillita, con eksctl
 
 #
 
