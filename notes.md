@@ -23,6 +23,9 @@ Entendí que en latam las cosas aon distintas desde un punto de vista user adqui
 
 #
 
+Para maximizar la eficiencia hay que aumentar el número de casos reconocibles rápidamente y el número de casos controlados, esto hace que conciente mente sea necesario menos esfuerzo y por ende más rapidez a la hora de realizar los actos, sin embargo esto es solo posible con la adquisición de nuevos casos conocidos por medio de la práctica 
+
+Esta práctica sin embargo no debe ser random, debe maximizar el aprendizaje relacionando bien los nuevos problemas resueltos para que fijen las mismas neuronas y sean los aprendidos deben cubrir la mayor parte de similitud con él conjuros de casos posibles 
 
 #
 
