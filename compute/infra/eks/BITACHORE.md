@@ -65,8 +65,23 @@ Check that your eks can handle ebs management via iam, see [next link](https://r
 You need to create a policy allowing ebs management, next create a trust policy to allow eks oidc asume a role
 binded to this policy
 
+Also you need to associate iam oidc provider to your cluster
+
+```bash
+eksctl utils associate-iam-oidc-provider --cluster aimo --approve
+```
 ## About eks fargate vs eks ec2
 
 - Fargate is more expensive than ec2 without correct configurations
 - EBS is not supported at fargate clusters, you should use EFS
 - Daemonsets are not supported at fargate, you should re engineering your app 
+
+## About sealed secrets
+
+Without `--scpoe cluster-wide` sealing secrets will end in failure
+
+Prever run `kubeseal --scope cluster-wide --cert=crt.pem --format=yaml < secret-file.yaml > sealedsecret-out.yaml` 
+
+For more information see next link [https://github.com/bitnami-labs/sealed-secrets/issues/480]()
+
+
