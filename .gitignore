@@ -8,3 +8,5 @@ dist/*
 **/*.tfstate
 **/*.swp
 **/*.lock
+dist/*
+blog/tech/public/*
