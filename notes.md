@@ -1,6 +1,15 @@
 #
 
+Voy a iniciar mi blog, iniciando con la instalacion
+
+#
+
+Aprendi el getting started de real time rethinkdb y sockets, me queda la duda de como hacerlo super bien
+
+#
+
 A veces la mejor solucion para git lfs es desinstalarlo y volverlo a instalar...
+
 #
 
 Si C es el conjunto de situaciones que se desean aprender, existirán un conjunto de cx pertenecientes a C que ayudaran a controlar las situaciones representadas por C
@@ -12,27 +21,42 @@ Aprendi a desplegar un cluster eks de la forma sencillita, con eksctl
 
 Apto https://www.constructorabolivar.com/proyectos-vivienda/cali/arandanos-vivero-parque-residencial
 
+#
+
+Conocí el parque de el perro en una salida chévere con Mauro y herrera
 
 #
 
-Conocí el parque de el perro en una salida chévere con Mauro y herrera 
+Entendí que en latam las cosas aon distintas desde un punto de vista user adquisition , por ejemplo DiDi se fue de tienda en tienda registrándolos para DiDi food, así funciona LATAM en vez de ser self discoverer y self serve
 
 #
 
-Entendí que en latam las cosas aon distintas desde un punto de vista user adquisition , por ejemplo DiDi se fue de tienda en tienda registrándolos para DiDi food, así funciona LATAM en vez de ser self discoverer y self serve 
+Para maximizar la eficiencia hay que aumentar el número de casos reconocibles rápidamente y el número de casos controlados, esto hace que conciente mente sea necesario menos esfuerzo y por ende más rapidez a la hora de realizar los actos, sin embargo esto es solo posible con la adquisición de nuevos casos conocidos por medio de la práctica
+
+Esta práctica sin embargo no debe ser random, debe maximizar el aprendizaje relacionando bien los nuevos problemas resueltos para que fijen las mismas neuronas y sean los aprendidos deben cubrir la mayor parte de similitud con él conjuros de casos posibles
+Entendi gran parte de los problemas de la humanidad, como el de alimentacion, en realidad la alimentacion basada en
+azucares y carbohidratos no es tan mala en el contexto que surgio: cuando US era principalmente agricola y se quemaban
+muchas calorias.
+
+Cual es el problema entonces? que la realidad cambio para las personas que vivian en ciudad, sin embargo la industria
+y las personas seguian con los mismos habitos alimenticios y economicos, las maquinas ya estaban, los habitos tambien,
+y esto hizo que luego la gente muriera de diabetes.
+
+Aca hay dos cosas a recalcar: cuesta cambiar desde un punto de vista economico, y tambien desde un punto de vista personal,
+tanto los consumidores como los productores se niegan a cambiar la direccion de su vector alimentacion y obtension de
+ingresos, y cuesta para que emerja un nuevo flujo vectorial que reorganize y optimice todo el sistema, desplazando los
+viejos productores y cambiando los habitos de los nuevos consumidores.
+
+Normalemente para estos cambios tan grandes se necesita un cambio generacional, dado que las nuevas generaciones tienen
+mucha mas neuro plasticidad y tendencia natural a aceptar las cosas nuevas.
+
+De lo anterior se entiende por que esta bien que el ser humano tenga una vida finita.
 
 #
 
-Para maximizar la eficiencia hay que aumentar el número de casos reconocibles rápidamente y el número de casos controlados, esto hace que conciente mente sea necesario menos esfuerzo y por ende más rapidez a la hora de realizar los actos, sin embargo esto es solo posible con la adquisición de nuevos casos conocidos por medio de la práctica 
-
-Esta práctica sin embargo no debe ser random, debe maximizar el aprendizaje relacionando bien los nuevos problemas resueltos para que fijen las mismas neuronas y sean los aprendidos deben cubrir la mayor parte de similitud con él conjuros de casos posibles 
-
 #
 
-
-#
-
-Volví a abrir mi kanban 
+Volví a abrir mi kanban
 
 #
 
@@ -44,15 +68,17 @@ He vuelto a escuchar música, sin embargo lo mantengo al límite, Máximo tres c
 
 #
 
-La abuela se quebró una mano, mande 100k para apoyar a cielo que es quien la va a acompañar 
+La abuela se quebró una mano, mande 100k para apoyar a cielo que es quien la va a acompañar
 
 #
 
-En Pensilvania visite a la familia y estuvo chévere, hablé con doña Marleny y entendí mucha parte de su vida lo cual fue bastante agradable, igual sobre la vida de Norvey y yudier 
+En Pensilvania visite a la familia y estuvo chévere, hablé con doña Marleny y entendí mucha parte de su vida lo cual fue bastante agradable, igual sobre la vida de Norvey y yudier
 
 #
-Configure gogs 
-# 
+
+Configure gogs
+
+#
 
 Buscar sobre antioxidantes
 
@@ -62,12 +88,11 @@ Fui a Pensilvania y visité a gran parte de la familia
 
 #
 
-Entendí quien es Marleny Herrera 
+Entendí quien es Marleny Herrera
 
+#
 
-# 
-
-Debo ayudar a Norvey posiblemente, almenos quiero 
+Debo ayudar a Norvey posiblemente, almenos quiero
 
 #
 
@@ -83,33 +108,30 @@ Para asegurar tu éxito a largo plazo debes tener participación en muchos vecto
 
 #
 
-
-Este mundo es un mundo energético económico, y también tiene una dimensión de dirección económica que rige gran parte de su flujo y evolución, todos los preconfiguraciones existentes de la economía actual y direcciones y personas relacionadas actúan como personalizaciones de el campo probabilístico de estas, igual todas las demás personas 
+Este mundo es un mundo energético económico, y también tiene una dimensión de dirección económica que rige gran parte de su flujo y evolución, todos los preconfiguraciones existentes de la economía actual y direcciones y personas relacionadas actúan como personalizaciones de el campo probabilístico de estas, igual todas las demás personas
 
 #
 
 Es probable que mi madre y yo tengamos a veces falta de fuerza por un mal balance en la flora microbiana y por ende mal funcionamiento de la energía diaria, esto por alguna predisposición sumado a hábitos incorrectos de dieta
 
-Es probable que cada persona tenga una dieta distinta apta para su micro flora intestinal y de ahí dependa mucha de su energía 
+Es probable que cada persona tenga una dieta distinta apta para su micro flora intestinal y de ahí dependa mucha de su energía
 
 #
 
 Toda estrategia necesita una estrategia energetica, proyectos de vida, proyectos comunitarios,
-sociales, actividades diarias como hacer ejercicio o prepararse para algun evento, todo 
-en el mundo se puede reducir a energia, y para hacer necesitas planear, medir, organizar 
+sociales, actividades diarias como hacer ejercicio o prepararse para algun evento, todo
+en el mundo se puede reducir a energia, y para hacer necesitas planear, medir, organizar
 y ejecutar, una de las formas mas importantes de energia es el dinero, sin embargo la clave
 es la energia personal y esta esta dada principalmente por los alimentos que ingerimos, cuando
 y con que frecuencia. Importa tambien la calidad de estos, biodisponibilidad y eficiencia.
 
-
-
-Lo que siempre sobrevive de una aplicacion son los datos, lo mas importante a la hora de la reliability 
+Lo que siempre sobrevive de una aplicacion son los datos, lo mas importante a la hora de la reliability
 son los storage, alli recide la capacidad de recuperarse de los errores. El procesamiento es reemplazable
 
 Esto pasa tambien con nuestras acciones, el procesamiento especifico momentaneo es futil y reemplazable,
 sin embargo la obra, agrega mas valor, ensenia mas, y perdura mas.
 
-# 
+#
 
 Este mundo es un flujo, las afirmaciones lo bloquean, las preguntas le permiten y le ayudan a fluir.
 
@@ -117,7 +139,7 @@ Igual los enuncados en forma de sugerencia o hipotesis.
 
 Quiza un paso importante paso a un lenguaje mas efectivo es pasar de la afirmacion a la pregunta.
 
-# 
+#
 
 Me di cuenta que no soy normal, mi capacidad para resolver problemas y hacer asociaciones no es comun, al parecer tengo el sistema
 nervioso super desarrollado, lo cual implica que debo tener mas cuidado a la hora de recibir estimulos. Tanto alimenticios, como sonoros,
@@ -174,6 +196,7 @@ Por ejemplo como aniadir a wekan temas y soportarlos nativamente?
 #
 
 Interesante opentelemetry and dtrace
+
 #
 
 La diferencia entre riqueza y pobreza está en un estado mental de yo quiero y yo puedo, o debo organizar para, a yo hago y yo deseo sin un panorama claro para concretarlo
