@@ -6,3 +6,4 @@ dist/*
 **/*.backup
 **/*.hcl
 **/*.tfstate
+**/*.swp
