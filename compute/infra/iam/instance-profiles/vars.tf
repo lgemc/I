@@ -1,3 +1,3 @@
-variable "ebs_manager_role_name" {
+variable "kube_node_role_name" {
   type = string
 }
