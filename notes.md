@@ -1,5 +1,13 @@
 #
 
+Rutas de platzi recomendadas:
+marketing de datos
+no code
+product design
+ux/ui
+
+#
+
 Voy a iniciar mi blog, iniciando con la instalacion
 
 #

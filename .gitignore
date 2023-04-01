@@ -10,3 +10,5 @@ dist/*
 **/*.lock
 dist/*
 blog/tech/public/*
+resources/*
+**/*.raw.yaml
