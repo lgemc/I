@@ -1,0 +1,24 @@
+package databases {
+    package singleNodeDBS {
+        database node as "db" {
+
+        }
+    }
+
+    package distribuitedDBS {
+        database main as "leader" {
+
+        }
+
+        database child1 as "child1" {
+
+        }
+
+        database childn as "child-n" {
+
+        }
+
+        main -- child1
+        main -- childn
+    }
+}

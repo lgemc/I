@@ -1,0 +1,40 @@
+@startuml
+package storage {
+    package machineA {
+        package monolithComponent  as "process:system" {
+            component logic {
+
+            }
+
+            component storageComponent as "storage" {
+
+            }
+        }
+    }
+
+    package machineB {
+        package systemComponent as "process:system" {
+            label " "
+        }
+
+        package distribuitedStorageComponent as "process:storage" {
+            label "  "
+        }
+
+        systemComponent -- distribuitedStorageComponent
+    }
+
+    package network {
+        node multiNodeSystem as "sistem" {
+            package multiNodeSytem as "process:system" {
+                label "   "
+            }
+        }
+        node multiNodeDatabase as "storage" {
+
+        }
+
+        multiNodeDatabase -- multiNodeSystem
+    }
+}
+@enduml
