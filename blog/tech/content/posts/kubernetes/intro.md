@@ -6,9 +6,10 @@ draft: false
 
 # Descrito en pocas palabras... 😶
 
-Kubernetes es un a forma integral de manejar tu infraestructura containerizada
+Kubernetes es un a forma integral de escribir, desplegar, actualizar y mantener
+tu infraestructura containerizada
 
-# Por?
+# ¿Por?
 
 Con la aparición y masificación de los containers y de la cloud, surgió la
 necesidad de tener un lugar donde desplegar infraestructura containerizada de
@@ -18,24 +19,24 @@ _Disclaimer_: No soy experto en docker swarm
 
 Si bien los principales impulsores de los contenedores para el gran publico,
 **Docker Inc**, proveía una forma de desplegar arquitecturas containerizadas, lo
-cierto es que no ofrecía las garantías suficientes para aplicaciones a gran
-escala, con cientos de microservicios o nodos físicos.
+cierto es que no ofrecía las garantías y flexibilidad suficientes para
+aplicaciones con cientos de micro-servicios o nodos físicos.
 
 ## Google entra en el juego
 
 Con la creación de GCP (google cloud platform), google se puso manos a la obra
 para llevar a la realidad una plataforma que permitiera dos cosas principales:
 
-- Atraer mercado
+- Atraer mercado a su cloud
 - Permitir a clientes externos manipular arquitectura cloud de forma segura y
   configurable.
 
-Como big tech que son, ya habían tenido problemas con manejar muchos servidores
-y miles de servicios, problema que por supuesto ya habían resuelto internamente
-con Borg (y más recientemente con Omega), sistemas que de manera absolutamente
-superficial, les permitía abstraer la capa física (maquinas, modelo, drivers y
-sistema operativo) para centrarse en el despliegue y desarrollo de servicios,
-ofreciendo buenos standares de reliability.
+Como big tech que son, ya habían tenido retos que implicaban mantener miles de
+maquinas físicas y miles de servicios, problema que ya habían resuelto
+internamente con Borg (y más recientemente con Omega), los cuales les permitía
+abstraer la capa física (maquinas, modelo, drivers y sistema operativo) para
+centrarse en el despliegue y desarrollo de servicios, ofreciendo buenos
+estándares de reliability.
 
 Borg y Omega ya había experimentado ampliamente con aplicaciones
 containerizadas, en palabras de Brendan Burns (lead engineering en google,
@@ -68,9 +69,9 @@ infraestructura.
 
 Si pasas de los 4 servicios, (tres o más bases de datos donde algunas necesitan
 multiples nodos para escalar), dos o más servicios web, multiples cronjobs
-(tareas que se ejecutan cada cierto tiempo), infraestructura de monitoreo (bases
-de datos para albergar metricas, dashboards para visualizarlos, alarmas, log
-rotation, log collector), entonces kubernetes puede ayudarte inmensamente.
+(tareas que se ejecutan cada cierto tiempo), infraestructura de monitorización
+(bases de datos para albergar métricas, dashboards para visualizarlos, alarmas,
+log rotation, log collector), entonces kubernetes puede ayudarte inmensamente.
 
 # Componentes principales
 
@@ -108,7 +109,7 @@ rotation, log collector), entonces kubernetes puede ayudarte inmensamente.
 ## Ventajas
 
 - Escalable
-- Multicloud
+- Multi-cloud
 - Buenas practicas
 - Abstracción de la capa física
 
@@ -177,9 +178,9 @@ ejecutar contenedores relacionados.
 ## Terraform
 
 - Ambos poseen la capacidad de representar infraestructura como código,
-  terraform con su propio lenguaje hdl (creado por hashicorp), kubernetes haciendo
-  uso de estándares abiertos como yaml (es el principalmente usado en documentación
-  oficial), o json.
+  terraform con su propio lenguaje hdl (creado por Hashicorp), kubernetes
+  haciendo uso de estándares abiertos como yaml (es el principalmente usado en
+  documentación oficial), o json.
 
 ## Ansible
 
