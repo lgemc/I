@@ -1,4 +1,4 @@
 baseURL = 'https://blog.tech.atelier.run/'
 languageCode = 'es'
-title = 'Un blog de tecnologia mas'
+title = 'Un blog de tecnología mas'
 theme = 'ananke'

@@ -16,3 +16,6 @@ blog.tech.content.build:
 	hugo -c blog/tech/content/ -d dist/blog/tech --config blog/tech/config.toml --themesDir blog/tech/themes/
 
 blog.tech.image.publish: blog.tech.content.build blog.tech.image.build blog.tech.image.tag blog.tech.image.push
+
+blog.tech.deploy: blog.tech.image.publish
+	kubectl rollout restart deployment blog-tech-web
