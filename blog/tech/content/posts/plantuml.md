@@ -16,7 +16,7 @@ Puedes comenzar a editar en linea en [el siguiente enlace](https://www.plantuml.
 
 Si tienes `visual code` puedes usar [la extension](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
 
-Vía CLI también puedes usarlo, para instalarlo, esta como paquete en la mayoria de repositorios
+Vía CLI también puedes usarlo, para instalarlo, esta disponible en la mayoría de gestores de paquetes
 
 Ubuntu:
 
