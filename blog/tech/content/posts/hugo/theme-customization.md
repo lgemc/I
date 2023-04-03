@@ -1,5 +1,5 @@
 ---
-title: Configuración de temas en hugo
+title: Botón de copiar código en hugo
 date: 2023:04:03T05:32:00-05:00
 draft: false
 ---
