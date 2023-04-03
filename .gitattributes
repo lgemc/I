@@ -5,3 +5,4 @@ profile/Luis_Gerardo_Manrique_Cardona_-_-2.pdf filter=lfs diff=lfs merge=lfs -te
 assets/wallpapers/hacker_emblem.jpg filter=lfs diff=lfs merge=lfs -text
 parents/cedulaGerardo.png filter=lfs diff=lfs merge=lfs -text
 parents/cedulaRuth.png filter=lfs diff=lfs merge=lfs -text
+images/** filter=lfs diff=lfs merge=lfs -text
