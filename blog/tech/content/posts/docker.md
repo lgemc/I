@@ -6,11 +6,15 @@ draft: false
 
 # Docker, por qué?
 
-Te va a sonar extraño, pero el por que de docker es como idea de growth de `Docker Inc` (previamente `dotcloud.com`, una empresa que ofrecía plataforma como servicio, PaaS)
+Te va a sonar extraño, pero el por que de docker es como idea de growth de
+`Docker Inc` (previamente `dotcloud.com`, una empresa que ofrecía plataforma
+como servicio, PaaS)
 
-_Más información sobre `dot cloud` [aquí](https://jpetazzo.github.io/2017/02/24/from-dotcloud-to-docker/)_
+_Más información sobre `dot cloud`
+[aquí](https://jpetazzo.github.io/2017/02/24/from-dotcloud-to-docker/)_
 
-Te adelanto que `Docker Inc` fue adquirido por `Mirantis` (empresa que se dedica a servicios en la nube) en 2019.
+Te adelanto que `Docker Inc` fue adquirido por `Mirantis` en 2019. Mirantis se
+dedica a proveer servicios en la nube.
 
 # Toolset
 
@@ -43,7 +47,8 @@ Te adelanto que `Docker Inc` fue adquirido por `Mirantis` (empresa que se dedica
 
 # Builder
 
-Docker usa el formato `DockerFile` para construir nuevas imágenes, pero que significa realmente construir una imagen 🧐?
+Docker usa el formato `DockerFile` para construir nuevas imágenes, pero que
+significa realmente construir una imagen 🧐?
 
 Supongamos que tienes el siguiente archivo `DockerFile``
 
