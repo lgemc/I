@@ -154,7 +154,7 @@ _Dale..._
 
 ### El reemplazo de archivos en acción
 
-Como dijimos antes, si haces un archivo `layouts/partials/head-additions.html` hugo tomara tu archivo en vez de el de el tema `Ananke`, y con esto podremos personalizar el contenido de el bloque `head`, y allí podremos incluir nuestro nuevo css.
+Como dijimos antes, si haces un archivo `layouts/partials/head-additions.html` hugo tomara tu archivo en vez de el de el tema `Ananke`, y con esto podremos personalizar el contenido de el bloque `head`, y allí podremos incluir nuestro nuevo archivo `js`.
 
 `layouts/partials/head-additions.html`:
 
