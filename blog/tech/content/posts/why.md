@@ -6,7 +6,7 @@ draft: false
 
 # Acerca de mi
 
-A efectos prácticos, solo hay algo importante acerca de mi que comentar: me encanta la tecnología 🤓
+Por ahora mencionare solo un dato acerca de mí: me encanta la tecnología 🤓
 
 # Acerca de el blog
 
