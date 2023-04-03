@@ -1,5 +1,9 @@
-/* global clipboard */
-/* eslint-disable no-console */
+/**
+ * Enable copy button on each code block
+ *
+ * It inserts a button over each `pre` tag with a given text,
+ * and adds logic to copy block code content to clipboard on click
+ */
 
 copyButtonText = "Copiar"
 
