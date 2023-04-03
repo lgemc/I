@@ -226,6 +226,8 @@ Bueno, falta un último paso (prometo que será el ultimo 😉)
 
 Recuerdas el archivo de `head-additions`? bueno, vamos a agregar el nuevo css a tu blog 😊
 
+`layouts/partials/head-additions.html`
+
 {{< highlight go "linenos=table,hl_lines=1" >}}
 
 <link rel="stylesheet" href="/css/copy-code.css" />
