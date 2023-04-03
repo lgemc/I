@@ -170,7 +170,7 @@ Con esto ya tendremos el botón copiar 😊
 
 uuu, es cierto, vamos a eso
 
-### Agregando estilos a el nuevo código 🎨 ⚙️
+### Agregando estilos a el botón `Copiar` 🎨 ⚙️
 
 En el archivo `static/css/copy-code.css` añade el siguiente código:
 
