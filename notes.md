@@ -1,5 +1,24 @@
 #
 
+Persona que arregla cosas de apple
+
+Wiltech oficial (@wiltech_oficial) • Fotos y videos de Instagram
+https://www.instagram.com/wiltech_oficial/?hl=es
+
+#
+
+Buen blog de ejemplo de tecnología
+
+https://youtube.com/@RingaTech
+
+#
+
+Blog de diseño de ejemplo
+
+https://www.uifrommars.com/documenta-tu-progreso/
+
+#
+
 Hipótesis: el difficulty gap de generar contenido en cursos se irá reduciendo a
 medida que se valla practicando la creación de estos y que halla más material de
 referencia, hay que encontrar una buena forma para co-relacionar material sin
