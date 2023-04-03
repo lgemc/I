@@ -43,6 +43,15 @@ Te adelanto que `Docker Inc` fue adquirido por `Mirantis` (empresa que se dedica
 
 # Builder
 
+Docker usa el formato `DockerFile` para construir nuevas imágenes, pero que significa realmente construir una imagen 🧐?
+
+Supongamos que tienes el siguiente archivo `DockerFile``
+
+```docker
+FROM alpine
+echo "holi" >> miarchivo.txt
+```
+
 # Runtime
 
 # Dockerd
