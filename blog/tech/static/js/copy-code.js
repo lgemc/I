@@ -1,12 +1,14 @@
 /* global clipboard */
 /* eslint-disable no-console */
 
+copyButtonText = "Copiar"
+
 function addCopyButtons(clipboard) {
     document.querySelectorAll("pre > code").forEach(function (codeBlock) {
         var button = document.createElement("button");
         button.className = "copy-code-button";
         button.type = "button";
-        button.innerText = "Copy";
+        button.innerText = copyButtonText;
 
         button.addEventListener("click", function () {
             clipboard.writeText(codeBlock.textContent).then(
@@ -15,9 +17,9 @@ function addCopyButtons(clipboard) {
                        in a focused state */
                     button.blur();
 
-                    button.innerText = "Copied!";
+                    button.innerText = "Copiado!";
                     setTimeout(function () {
-                        button.innerText = "Copy";
+                        button.innerText = copyButtonText;
                     }, 2000);
                 },
                 function (error) {
