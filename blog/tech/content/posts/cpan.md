@@ -13,7 +13,7 @@ Comprensive perl archive network, es un gestor de paquetes que permite publicar 
 Si quieres instalar el modulo `Graph::Easy` [más información en el siguiente link](https://linux.die.net/man/1/graph-easy) puedes hacerlo con el comando
 
 ```bash
-sudo cpan install Graph::Easy`
+sudo cpan install Graph::Easy
 ```
 
 # Comparativas con otros sistemas
