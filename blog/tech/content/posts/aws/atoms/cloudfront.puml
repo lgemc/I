@@ -1,0 +1,24 @@
+@startuml
+package internet {
+    actor person
+
+    cloud aws {
+        node cloudfront {
+
+        }
+
+        node certificates {
+
+        }
+
+        node loadBalancer as "load-blancer"
+        node s3Bucket as "s3-bucket"
+        
+        cloudfront --> loadBalancer: can-target
+        cloudfront --> s3Bucket: can-target
+        certificates <-- cloudfront: uses
+    }
+
+    person -- cloudfront
+}
+@enduml
