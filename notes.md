@@ -1,5 +1,46 @@
 #
 
+Buen recurso para staff enginering https://staffeng.com/guides/
+
+#
+
+Igual que los viejos que no quieren instalar nequi estoy yo cuando me
+preguntaron sobre chat gpt
+
+Hay que aprender a identificar que reaccion tomamos sobre un tema, y muchas
+veces es una reaccion adversa por que nos genrea algun miedo por desconocimiento
+o por aversion ignorante, en estos casos hay que revisar nuestro estado y si
+podemos controlarnos lo mejor posible y abrazar la insatisfaccion con
+curiosidad, soportar el mal sentimiento que genera y continuar, darle
+oportunidad
+
+Tambien es el problema de irse volviendo viejo.
+
+#
+
+Quiero encontrar la forma de aumentar la discoverability de chat gpt, para
+ayudar a descubrir lo que no sabes para poder sacar el prompt correcto.
+
+Ahora gpt es brutal para el que ya sabe, pero el que no sabe no sabe ni que es
+lo que no sabe y como deberia preguntar para empezar.
+
+Tambien va a necesitar un nuevo negocio para problemas no solucionables por gpt,
+cuando no da la respuesta correcta siempre necesitas alguien que te desvare o ir
+a la documentacion oficial, tambien necesitas un tutor que si conozca, y lo
+principal es ademas de el chat tener donde ejecutar los comandos, ahi entra
+replit pero quiero algo open para eso
+
+#
+
+Repetible: todo lo que hagas debe poderse medir, ver historial y volver sobre el
+como chat gpt, y reusarlo, con esto aimplificaras tu efectividad (fish es un
+ejemplo de esto)
+
+Cualquier optimizacion a memoria volatil (comandos sin historico, proeyctos sin
+trazabilidad) es bienbenida
+
+#
+
 Persona que arregla cosas de apple
 
 Wiltech oficial (@wiltech_oficial) • Fotos y videos de Instagram
