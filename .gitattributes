@@ -6,3 +6,5 @@ assets/wallpapers/hacker_emblem.jpg filter=lfs diff=lfs merge=lfs -text
 parents/cedulaGerardo.png filter=lfs diff=lfs merge=lfs -text
 parents/cedulaRuth.png filter=lfs diff=lfs merge=lfs -text
 images/** filter=lfs diff=lfs merge=lfs -text
+assets/** filter=lfs diff=lfs merge=lfs -text
+static/** filter=lfs diff=lfs merge=lfs -text
