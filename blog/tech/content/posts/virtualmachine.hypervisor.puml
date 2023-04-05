@@ -1,0 +1,9 @@
+@startuml 
+cloud "hypervisor examples are virtualbox, kvm or qemu"
+node machine {
+    package hypervisor {
+        node vm1 as "virtual machine 1"
+        node vm2 as "virtual machine 2"
+    }
+}
+@enduml

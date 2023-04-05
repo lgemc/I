@@ -53,6 +53,34 @@ esta.
 curl -sfL https://get.k3s.io | sh -
 ```
 
+Podemos el estado de el servicio con el siguiente comando
+
+```bash
+sudo systemctl status k3s
+```
+
+Debería mostrar una salida como la que sigue:
+
+```txt
+🟢 k3s.service - Lightweight Kubernetes
+     Loaded: loaded (/etc/systemd/system/k3s.service; enabled; preset: disabled)
+     Active: active (running) since Wed 2023-04-05 06:42:07 -05; 1min 29s ago
+       Docs: https://k3s.io
+```
+
+Para ver los nodos de tu cluster, por que sipi 😊 ya tenemos un cluster mono nodo de kubernetes, puedes ejecutar el siguiente comando
+
+```bash
+sudo k3s kubectl get nodes
+```
+
+Dará una salida como la siguiente
+
+```txt
+NAME                    STATUS   ROLES                  AGE     VERSION
+localhost.localdomain   Ready    control-plane,master   5m57s   v1.26.3+k3s1
+```
+
 > Ajá, y esa cosa que hizo? en mi maquina
 
 Como ya es un clásico en este blog, no nos quedaremos solamente en path fácil de
@@ -70,8 +98,10 @@ El comando de instalación, ha echo tres pasos importantes:
 
 jeeeej bueeeno, eso es una larga historia
 
-# El gestor de servicios standard en linux: systemd
-
+<details>
+  <summary style="font-weight: bold;font-size: 1.3em;">
+  Opcional: El gestor de servicios standard en linux: systemd
+  </summary>
 systemd tiene la siguiente arquitectura:
 
 ![Systemd architecture](/images/diagrams/systemd.png)
@@ -157,11 +187,7 @@ datos importantes:
 Por ahora no daré más detalles sobre `k3s.service`, sin embargo volveremos a
 estas configuraciones más adelante 😈
 
-## Iniciando sesión con kubectl
-
-Con k3s instalado, puedes ver tu cluster con `k3s kubectl get nodes`
-
-En efecto, k3s incluye también `kubectl`.
+</details>
 
 ## Arquitectura de el ejecutable `k3s`
 
@@ -189,20 +215,20 @@ instalados en el cluster, y estos datos son clave ya que es de allí que se
 orquesta todo el estado de el cluster
 
 `Podría decirse que kubernetes es un sistema de computación distribuida donde su
-principal meta es hacer que se cumpla el archivo de estado`
+principal meta es hacer que se cumpla lo que esta pactado en el estado`
 
 Si quieres inspeccionar o copiar este archivo esta en el archivo
 `/var/lib/rancher/k3s/server/db/state.db`
 
-En condiciones comunes, kubernetes almacena este archivo de estado en una base
-de datos externa en modo cluster para tener capacidad de recuperación en caso de
-fallos, esta base de datos es `etcd` (una base de datos clave valor distribuida
-basada en un algoritmo de consenso), `k3s` escribio un wraper de los accesos a
+En condiciones comunes, kubernetes almacena el estado de en una base
+de datos externa al cluster, normalmente con replicación para tener capacidad
+de recuperación en caso de fallos, esta base de datos es `etcd` (una base de datos clave valor distribuida basada en un algoritmo de consenso), `k3s` escribió un wrapper de los accesos a
 esta para convertirla en `sql like`.
 
 Si quieres cambiar la base de datos por defecto de `sqlite` a alguna versión mas
 potente sea `sql` o `etcd` puedes hacerlo, más información en el [siguiente
-link](https://docs.k3s.io/datastore)
+link](https://docs.k3s.io/datastore), más adelante también explicare como seria
+el proceso y que implicaciones tiene.
 
 **Uno de los grandes diferenciales de `k3s` es que viene con soporte por defecto
 para almacenar los datos en bases de datos `sql`.**

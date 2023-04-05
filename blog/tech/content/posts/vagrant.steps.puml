@@ -1,0 +1,25 @@
+@startuml
+
+actor You
+participant VagrantCli
+participant Hypervisor
+participant VirtualMachine
+collections VagrantFile
+activate You
+You -> VagrantFile: writes
+activate VagrantCli
+You -> VagrantCli: executes
+VagrantCli -> VagrantFile: reads
+VagrantCli -> Hypervisor: apply changes
+Hypervisor -> VirtualMachine: apply changes
+activate VirtualMachine
+VirtualMachine -> Hypervisor: results
+deactivate VirtualMachine
+activate Hypervisor
+Hypervisor -> VagrantCli: results
+deactivate Hypervisor
+VagrantCli -> You: results
+deactivate VagrantCli
+You -> VirtualMachine: connects via ssh
+deactivate You
+@enduml
