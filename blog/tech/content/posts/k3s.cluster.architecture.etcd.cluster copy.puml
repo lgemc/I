@@ -1,0 +1,31 @@
+@startuml
+node main {
+    package k3s {
+        package kubectl {
+            label " "
+        }
+        package kubelet {
+            label "  "
+        }
+        package containerd {
+            label "   "
+        }
+        package runc {
+            label "     "
+        }
+    }
+}
+
+node storageCluster {
+    node etcdNodeA {
+        frame etcda as "etcd"
+    }
+    node etcdNodeB {
+        frame etcdb as "etcd"
+    }
+
+    etcdNodeA -- etcdNodeB
+}
+
+k3s --> storageCluster
+@endulm

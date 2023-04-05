@@ -50,6 +50,66 @@ Revisión de cómo crear contenido audiovisual
 #
 
 Blog sobre cómo acelerar el aprendizaje con chat gpt 
+Al igual que la filosofia de hugging face de no seguir a raja tabla el DRY, el blog atelier debe ser una digestion de conceptos
+mas que solo mandar a la gente a leer cosas, como mandarlos a leer systemd explicando k3s.
+
+#
+
+Como filosofia de blog quiero que todo tenga un hands on, codigo o algo para probar
+
+#
+
+Jetson nano rack b models supported
+https://www.amazon.com/UCTRONICS-Upgraded-Enclosure-Raspberry-Removable/dp/B09JNHKL2N/ref=sxin_26_ci_mcx_mi_sr_m_il?content-id=amzn1.sym.14a38c0a-385f-4735-bb28-d2be35b783e1%3Aamzn1.sym.14a38c0a-385f-4735-bb28-d2be35b783e1&crid=2PNI7FKA9WFHY&cv_ct_cx=jetson+nano+rack&keywords=jetson+nano+rack&pd_rd_i=B09JNHKL2N&pd_rd_r=9cf45ece-ad8c-4041-adfb-b0a44ceaf6ad&pd_rd_w=0qYNt&pd_rd_wg=OCQZa&pf_rd_p=14a38c0a-385f-4735-bb28-d2be35b783e1&pf_rd_r=795B50XAPKB09CCYZH2Y&qid=1680611430&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=jetson+nano+rack%2Caps%2C198&sr=1-5-9eb59ba4-cd99-4f87-9222-b322340b23c8
+
+#
+
+Jetson nano https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT
+
+#
+
+Curated list of common dev logos https://github.com/gilbarbara/logos
+
+#
+
+Buen recurso para staff enginering https://staffeng.com/guides/
+
+#
+
+Igual que los viejos que no quieren instalar nequi estoy yo cuando me
+preguntaron sobre chat gpt
+
+Hay que aprender a identificar que reaccion tomamos sobre un tema, y muchas
+veces es una reaccion adversa por que nos genrea algun miedo por desconocimiento
+o por aversion ignorante, en estos casos hay que revisar nuestro estado y si
+podemos controlarnos lo mejor posible y abrazar la insatisfaccion con
+curiosidad, soportar el mal sentimiento que genera y continuar, darle
+oportunidad
+
+Tambien es el problema de irse volviendo viejo.
+
+#
+
+Quiero encontrar la forma de aumentar la discoverability de chat gpt, para
+ayudar a descubrir lo que no sabes para poder sacar el prompt correcto.
+
+Ahora gpt es brutal para el que ya sabe, pero el que no sabe no sabe ni que es
+lo que no sabe y como deberia preguntar para empezar.
+
+Tambien va a necesitar un nuevo negocio para problemas no solucionables por gpt,
+cuando no da la respuesta correcta siempre necesitas alguien que te desvare o ir
+a la documentacion oficial, tambien necesitas un tutor que si conozca, y lo
+principal es ademas de el chat tener donde ejecutar los comandos, ahi entra
+replit pero quiero algo open para eso
+
+#
+
+Repetible: todo lo que hagas debe poderse medir, ver historial y volver sobre el
+como chat gpt, y reusarlo, con esto aimplificaras tu efectividad (fish es un
+ejemplo de esto)
+
+Cualquier optimizacion a memoria volatil (comandos sin historico, proeyctos sin
+trazabilidad) es bienbenida
 
 #
 

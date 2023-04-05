@@ -104,6 +104,38 @@ log rotation, log collector), entonces kubernetes puede ayudarte inmensamente.
 - Storage classes
 - Sealed secrets
 
+## Network policy controller
+
+Un concepto importante en kubernetes para garantizar la seguridad son las
+políticas de acceso a la red, existen varios proveedores que se encargan de
+manejar estos recursos:
+
+- Calico
+- Weave Net
+- Cilium
+
+Cada uno tiene formatos distintos, por ahora basta con mostrar como se vería una
+política configurada con calico:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-http
+spec:
+  podSelector:
+    matchLabels:
+      app: my-app
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: mi-app
+      ports:
+        - protocol: TCP
+          port: 80
+```
+
 # Ventajas y desventajas
 
 ## Ventajas

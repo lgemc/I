@@ -1,0 +1,25 @@
+@startuml 
+
+actor user
+
+node computer {
+    package services {
+        artifact systemd
+        artifact postgres
+        artifact nginx
+        artifact k3s
+    }
+
+    node journalctl 
+    agent systemctl
+
+    user --> systemctl: systemctl start | stop | restart | status | enable | disable
+    systemctl --> systemd: configure
+    journalctl --> services: handle logs
+    user --> journalctl: journalctl -u <service>
+    systemd --> postgres: manages
+    systemd --> nginx: manages
+    systemd --> k3s: manages
+}
+
+@enduml
