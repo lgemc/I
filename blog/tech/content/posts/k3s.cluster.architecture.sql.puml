@@ -1,0 +1,24 @@
+@startuml
+node main {
+    package k3s {
+        package kubectl {
+            label " "
+        }
+        package kubelet {
+            label "  "
+        }
+        package containerd {
+            label "   "
+        }
+        package runc {
+            label "     "
+        }
+    }
+}
+
+node storage {
+    frame db as "postgresdb or mariadb"
+}
+
+k3s --> storage
+@endulm
