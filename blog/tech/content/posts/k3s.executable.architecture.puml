@@ -1,0 +1,19 @@
+@startuml
+package k3s {
+    package kubectl {
+        label " "
+    }
+    package kubelet {
+        label "  "
+    }
+    package containerd {
+        label "   "
+    }
+    package runc {
+        label "     "
+    }
+    package sqlite3 {
+        file db 
+    }
+}
+@endulm

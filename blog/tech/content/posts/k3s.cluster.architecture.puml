@@ -1,0 +1,36 @@
+@startuml
+cloud externalSites as "External Sites"
+
+
+package k3sCluster {
+    package traefikLoadBalancer {
+        label " "
+    }
+    package coreDNS {
+        label "  "
+    }
+
+    collections pods
+
+    package metricsServer {
+        label "    "
+    }
+    package localPathProvisioner {
+        label "      "
+    }
+
+    package ingress as "custom-ingresses" {
+        label  "        "
+    }
+
+    package helm {
+        label "            "
+    }
+
+    traefikLoadBalancer --> ingress
+    coreDNS <--> pods: route
+    ingress --> coreDNS: resolve domains
+}
+
+externalSites --> traefikLoadBalancer
+@endulm
