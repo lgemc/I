@@ -1,0 +1,17 @@
+@startuml 
+node virtualmachine
+
+usecase "Create" as creation
+usecase "Edit resource configs (ram cpu etc)" as modification
+usecase "Delete" as deletion
+usecase "Run" as start
+usecase "Stop" as stop
+usecase "Connect ssh" as ssh
+
+creation --> virtualmachine
+modification --> virtualmachine
+deletion --> virtualmachine
+start --> virtualmachine
+stop --> virtualmachine
+ssh --> virtualmachine
+@enduml

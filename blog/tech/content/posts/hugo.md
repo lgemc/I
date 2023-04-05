@@ -18,6 +18,14 @@ continua y el despliegue continuo.
 
 Personalmente recomiendo la opción con [github pages + github actions](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 
+# Añadiendo imágenes a tu blog
+
+Lás imagenes puedes almacenarlas en el folder `static/images`, una vez allí puedes referenciarlas desde tu blog con la siguiente sintaxis:
+
+```md
+![Cluster architecture ](/images/diagrams/arch-example.png)
+```
+
 # Errores comunes
 
 # ---
@@ -31,6 +39,8 @@ Si estas ejecutando un comando similar al siguiente:
 hugo --source blog/tech --destination "dist/blog/tech/"
 ```
 
+````
+
 Es muy probable que al darle `ls ./dist/blog/tech` en realidad no halla nada 🥹
 
 Hay un problema extraño con el parámetro de el folder de destino, para resolver
@@ -41,3 +51,4 @@ hugo --source blog/tech --destination "$(pwd)/dist/blog/tech/"
 ```
 
 Con esto se soluciona el problema 🤗
+````

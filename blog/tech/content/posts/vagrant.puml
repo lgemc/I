@@ -1,0 +1,26 @@
+@startuml
+actor you
+node machine {
+    package vagrantcli {
+
+    }
+
+    file Vagrantfile 
+
+    package virtualbox {
+        node virtualMachine1
+        node virtualMachine2
+    }
+    package kvm {
+        node virtualMachine3
+    }
+
+    vagrantcli --> virtualbox: uses
+    vagrantcli --> kvm: uses
+    vagrantcli --> vagrantfile: apply
+}
+
+you --> vagrantcli: uses
+vagrantcli --> Vagrantfile: read and apply
+you --> Vagrantfile: writes
+@enduml
