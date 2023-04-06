@@ -1,7 +1,13 @@
-import { OpenAIApi } from "openai";
+import {
+  CreateChatCompletionRequest,
+  CreateChatCompletionResponse,
+  OpenAIApi,
+} from "openai";
 import env from "../env/lib";
 import { Vars } from "@i/shared/env/Vars";
-import { Result, err } from "neverthrow";
+import { Result, err, ok } from "neverthrow";
+import { AxiosError, AxiosResponse } from "axios";
+import { Context } from "@i/core/context";
 
 let $openai: OpenAIApi;
 
@@ -11,6 +17,7 @@ function init() {
   }
 
   const apiKey = env.string(Vars.OPENAI_API_KEY);
+
   if (!apiKey) {
     throw new Error("No OpenAI key found");
   }
@@ -19,22 +26,44 @@ function init() {
   $openai = new OpenAIApi({ apiKey });
 }
 
-async function listModels(): Promise<Result<any, Error>> {
+async function listModels(): Promise<Result<any, AxiosError>> {
   try {
-    const response = await $openai.listModels();
-    response.console.log(response);
+    const response = await $openai.listModels({
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${env.string(Vars.OPENAI_API_KEY)}`,
+      },
+    });
+    return ok(response);
   } catch (error) {
-    console.log(error);
     return err(error);
+  }
+}
+
+async function createChatCompletion(
+  ctx: Context,
+  input: CreateChatCompletionRequest
+): Promise<Result<CreateChatCompletionResponse, AxiosError>> {
+  try {
+    const response = await $openai.createChatCompletion(input, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${env.string(Vars.OPENAI_API_KEY)}`,
+      },
+    });
+
+    return ok(response.data);
+  } catch (e) {
+    return err(e);
   }
 }
 
 init();
 
-listModels();
 const openai = {
   init,
   listModels,
+  createChatCompletion,
 };
 
 export default openai;

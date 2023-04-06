@@ -13,6 +13,7 @@
     "outDir": "dist",
     "paths": {
       "@i/*": ["back/src/*"],
+      "@cli/*": ["cli/*"],
     },
     "target": "ES2018",
     "module": "CommonJS",
