@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: StatefulSet 
+kind: Deployment 
 metadata:
   name: gogs-web
 spec:
@@ -7,7 +7,6 @@ spec:
   selector:
     matchLabels:
       app: gogs-web
-  serviceName: gogs-web
   template:
     metadata:
       labels:
