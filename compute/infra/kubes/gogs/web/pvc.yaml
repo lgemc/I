@@ -3,7 +3,8 @@ kind: PersistentVolumeClaim
 metadata:
   name: gogs-claim
 spec:
-  storageClassName: ebs-sc 
+  storageClassName: ""
+  volumeName: gogs-web 
   accessModes:
     - ReadWriteOnce
   resources:
