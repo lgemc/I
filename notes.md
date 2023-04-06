@@ -1,7 +1,11 @@
 #
 
-Hettamientas para enseñar usando la terminal
+Cuando haces dettach de un pvc con ebs lo mas probable es que falle luego al volverle a hacer attach,
+para resolver esto a veces reiniciar el nodo funciona
 
+#
+
+Hettamientas para enseñar usando la terminal
 
 https://github.com/shellinabox/shellinabox/wiki/shellinaboxd_man
 
@@ -9,36 +13,36 @@ https://github.com/theonewolf/TermRecord
 
 #
 
-Take over 
+Take over
 
-En vez de filtrar los mensajes en la subscripcion por tickets se puede asociar un target en la base datos  
-
-#
-
-Estrategias para aprender una nueva tecnología velozmente 
-
-
-Deconstruye la tecnología específica en conceptos genéricos 
-
-Busca alternativas y indaga más profundo en los conceptos genéricos 
-
- Con la comparación con alternativas vas a tener mucha más información que deconstruir 
- 
- Busca tecnologías adyacentes y casos de uso, elige uno y ponte manos a la obra 
- 
- Con este caso de uso tendrás un ancla para comparar alternativas 
- 
- Maneja un conjunto de principios para trastear cada alternativa 
+En vez de filtrar los mensajes en la subscripcion por tickets se puede asociar un target en la base datos
 
 #
 
-Desarticulable: un paradigma para construir aplicaciones recusables y personalizarbles, un ejemplo de esto son los Micro frameworks 
+Estrategias para aprender una nueva tecnología velozmente
 
-Un concepto de digeribles, que estará marcado por la posibilidad de separar un sistema en partes más pequeñas y construir algo más con base en estas 
+Deconstruye la tecnología específica en conceptos genéricos
 
-ser digerible permite sobrevivir por qué permite acoplar a un host más grande que lo mantenga, igual que un virus, y poderse descomponer y añadir más partes permite evolucionar al mundo cambiante como las bacterias 
+Busca alternativas y indaga más profundo en los conceptos genéricos
+
+Con la comparación con alternativas vas a tener mucha más información que deconstruir
+
+Busca tecnologías adyacentes y casos de uso, elige uno y ponte manos a la obra
+
+Con este caso de uso tendrás un ancla para comparar alternativas
+
+Maneja un conjunto de principios para trastear cada alternativa
+
+#
+
+Desarticulable: un paradigma para construir aplicaciones recusables y personalizarbles, un ejemplo de esto son los Micro frameworks
+
+Un concepto de digeribles, que estará marcado por la posibilidad de separar un sistema en partes más pequeñas y construir algo más con base en estas
+
+ser digerible permite sobrevivir por qué permite acoplar a un host más grande que lo mantenga, igual que un virus, y poderse descomponer y añadir más partes permite evolucionar al mundo cambiante como las bacterias
 
 Y esto no implica que el sistema debe ser sencillo o pequeño
+
 #
 
 https://monadical.com/posts/functional-declarative-animations.html
@@ -49,7 +53,7 @@ Revisión de cómo crear contenido audiovisual
 
 #
 
-Blog sobre cómo acelerar el aprendizaje con chat gpt 
+Blog sobre cómo acelerar el aprendizaje con chat gpt
 Al igual que la filosofia de hugging face de no seguir a raja tabla el DRY, el blog atelier debe ser una digestion de conceptos
 mas que solo mandar a la gente a leer cosas, como mandarlos a leer systemd explicando k3s.
 
