@@ -23,6 +23,9 @@ blog.tech.image.build:
 blog.tech.content.build: blog.tech.diagrams.build
 	hugo --source blog/tech --destination $(PWD)/dist/blog/tech/
 
+blog.tech.serve:
+	hugo server --source=blog/tech
+
 blog.tech.image.publish: blog.tech.content.build blog.tech.image.build blog.tech.image.tag blog.tech.image.push
 
 blog.tech.deploy: blog.tech.image.publish
