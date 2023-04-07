@@ -1,0 +1,46 @@
+@startuml
+
+package cluster {
+    node kubeStorage {
+        database volumeA
+        database volumeB
+        database volumeC
+    }
+
+    node clusterStorage {
+        database volumeA1 as "volumeA"
+        database volumeB1 as "volumeB"
+        database volumeC1 as "volumeC"
+    }
+
+    package etcdCluster {
+        node etcdMaster
+        node etcdReplica1 as "etcdReplica"
+        node etcdReplica2 as "etcdReplica"
+
+        etcdMaster -- etcdReplica1
+        etcdMaster -- etcdReplica2
+    }
+
+    package k3sAgentCluster {
+        node k3sAgent1 as "k3sAgent"
+        node k3sAgent2 as "k3sAgent"
+    }
+
+    package k3sServerCluster {
+        node k3sServer1 as "k3sServer"
+        node k3sServer2 as "k3sServer"
+    }
+
+    k3sAgentCluster --> etcdCluster
+    k3sServerCluster --> etcdCluster
+
+    k3sServerCluster --> kubeStorage
+    k3sAgentCluster --> kubeStorage
+
+    k3sServerCluster --> clusterStorage
+    k3sAgentCluster --> clusterStorage
+
+    etcdCluster --> clusterStorage
+}
+@enduml
