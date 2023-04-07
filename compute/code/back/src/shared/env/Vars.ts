@@ -1,3 +1,4 @@
 export enum Vars {
   OPENAI_API_KEY = "OPENAI_API_KEY",
+  ATELIER_API_PORT = "ATELIER_API_PORT",
 }
