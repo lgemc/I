@@ -1,4 +1,32 @@
 #
+Existen distintos tipos de target para la educacion: los que tienen claro el ambiente en el qeu necesitaran
+la informacion que les va a llegar por experiencias en ambientes previos y capatran mucho mejor la informacion,
+los que quieren aprender pero ncesitaran ayuda ambiental para ponerse al tanto de que necesitan y por que, y los 
+escepticos que simplemente no les interesa lo que estan viendo
+
+#
+
+La mayoria de conceptos que no entiendes es por uqe no has vivido un escenario donde los necesites,
+cuando llega ese momento entonces te hace sentido
+
+Por ejemplo tmux no tiene sentido si no manejas con frecuencia servidores sin ui
+
+Vagrant no te hace sentido (ni ansible) si no manejas comunmente muchos servicios
+
+Kubernetes no te va a hacer sentido si no teines que desplegar decenas o almenos varios servicios ,
+pensar en abstraccion de nodos, replicas, fault tolerance etc
+
+Y hay otra variante, las cosas que no necesitas posiblemente no las entiendas y si la necesidad no es
+clara tampoco entenderas
+
+pero: si logras mostrar claramente la necesidad, hacer uqe la persona este animada a usar x cosa
+tienes el uso, el interes y la necesidad, entonces ahi podra entender el concepto
+
+Enseniar es mas de armar el ambiente dodne la persona le haga el sentido el concepto mas que explicar el concepto aislado en si.
+
+Para eso estan las salas de el taller
+
+#
 
 Cuando haces dettach de un pvc con ebs lo mas probable es que falle luego al volverle a hacer attach,
 para resolver esto a veces reiniciar el nodo funciona
