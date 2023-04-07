@@ -27,6 +27,11 @@ para resolver esto a veces reiniciar el nodo funciona
 
 #
 
+Cuando haces dettach de un pvc con ebs lo mas probable es que falle luego al volverle a hacer attach,
+para resolver esto a veces reiniciar el nodo funciona
+
+#
+
 Hettamientas para enseñar usando la terminal
 
 https://github.com/shellinabox/shellinabox/wiki/shellinaboxd_man
@@ -42,6 +47,15 @@ En vez de filtrar los mensajes en la subscripcion por tickets se puede asociar u
 #
 
 Estrategias para aprender una nueva tecnología velozmente
+
+Deconstruye la tecnología específica en conceptos genéricos
+
+Busca alternativas y indaga más profundo en los conceptos genéricos
+
+Con la comparación con alternativas vas a tener mucha más información que deconstruir
+
+Busca tecnologías adyacentes y casos de uso, elige uno y ponte manos a la obra
+
 
 Deconstruye la tecnología específica en conceptos genéricos
 
