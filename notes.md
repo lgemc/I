@@ -1,5 +1,27 @@
 #
 
+Learn with a methodology called dogestion 
+
+
+Decompose, recompose, build and produce, package and reduce one more time to single atom 
+
+#
+
+Build a easy setup to perform isolated atomic experiments and with them start to build organisms and mollecules
+
+# 
+
+Cd es acerca de la infraestructura no de la construcción de artefactos 
+
+
+#
+
+
+De los mejores usos para argo cd van a ser los bootstraps de apps
+
+
+#
+
 Cuando haces dettach de un pvc con ebs lo mas probable es que falle luego al volverle a hacer attach,
 para resolver esto a veces reiniciar el nodo funciona
 
