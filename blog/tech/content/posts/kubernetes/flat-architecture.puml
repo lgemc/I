@@ -1,5 +1,7 @@
 @startuml
 
+agent internet 
+node loadBalancer 
 package cluster {
     node kubeStorage {
         database volumeA
@@ -22,15 +24,18 @@ package cluster {
         etcdMaster -- etcdReplica2
     }
 
-    package k3sAgentCluster {
-        node k3sAgent1 as "k3sAgent"
-        node k3sAgent2 as "k3sAgent"
+    package k3sCluster {
+        package k3sAgentCluster {
+            node k3sAgent1 as "k3sAgent"
+            node k3sAgent2 as "k3sAgent"
+        }
+
+        package k3sServerCluster {
+            node k3sServer1 as "k3sServer"
+            node k3sServer2 as "k3sServer"
+        }
     }
 
-    package k3sServerCluster {
-        node k3sServer1 as "k3sServer"
-        node k3sServer2 as "k3sServer"
-    }
 
     k3sAgentCluster --> etcdCluster
     k3sServerCluster --> etcdCluster
@@ -43,4 +48,7 @@ package cluster {
 
     etcdCluster --> clusterStorage
 }
+
+internet --> loadBalancer
+loadBalancer --> k3sCluster 
 @enduml
