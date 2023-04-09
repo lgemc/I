@@ -1,0 +1,27 @@
+@startuml
+package cluster {
+    node machine1 {
+        package virtualCluster1 as "virtualCluster" {
+            node machine2 as "machine1" {
+
+            }
+
+            node machine2N as "machineN" {
+
+            }
+        }
+
+    }
+    node machineN {
+        package virtualCluster2 as "virtualCluster" {
+            node machine3 as "machine1" {
+
+            }
+
+            node machine3N as "machineN" {
+                
+            }
+        }
+    }
+}
+@enduml
