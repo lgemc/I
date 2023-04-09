@@ -1,5 +1,41 @@
 #
 
+Cómo unir la infra con el código? 
+
+Todo está sujeto de ser programático, con JavaScript puedes acceder a Libvirt por ejemplo 
+
+#
+
+Pet machines and non pet ones 
+
+#
+
+Una estrategia para educar en ambientes de interrupción sin previo aviso y con altos picos de interrupción pero con promedio de tiempo libre alto 
+
+Como retomar el foco en el tema de Atencion, como mantener uniformidad temporal (resúmenes de el punto en el que vas al retomar, imagen clara de el roadmap etc.
+
+
+# 
+
+Boot camp es solo una parte de el proceso y no puede ser ofrecido solo, tiene previa, pre y post y el post de la educación es infinito 
+
+#
+
+Self contained Courses with blog yo and console 
+
+
+At the end you own your learning process and can share it with others 
+
+It will be encrypted and you can chose if you want send it 
+
+#
+
+Containerizar shell in a box y por cada nueva sesión arrancar un container y matarlo cuando se desconecte
+
+Dependiendo de el punto de el taller la imagen será una u otra 
+
+#
+
 Learn with a methodology called dogestion 
 
 
