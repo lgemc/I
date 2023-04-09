@@ -26,6 +26,8 @@ blog.tech.content.build: blog.tech.diagrams.build
 blog.tech.serve:
 	hugo server --source=blog/tech
 
+profile.cv.build:
+	pdflatext profile/cv.tex --output-dir profile/cv/
 blog.tech.image.publish: blog.tech.content.build blog.tech.image.build blog.tech.image.tag blog.tech.image.push
 
 blog.tech.deploy: blog.tech.image.publish

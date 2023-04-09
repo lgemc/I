@@ -15,3 +15,5 @@ dist/*
 blog/tech/public/*
 resources/*
 **/*.raw.yaml
+profile/**/*.log
+profile/**/*.aux
