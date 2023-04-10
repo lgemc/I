@@ -3,3 +3,5 @@
 How to install a microstack with canonical 
 
 - tool: https://www.gnucash.org
+
+- https://itnext.io/angular-signals-the-future-of-angular-395a69e60062
