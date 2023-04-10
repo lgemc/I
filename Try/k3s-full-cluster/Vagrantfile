@@ -1,0 +1,5 @@
+Vagrant.configure("2") do |config|
+  config.network 
+
+  config.define("etcd-master")
+end
