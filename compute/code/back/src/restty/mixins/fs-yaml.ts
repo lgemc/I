@@ -30,9 +30,13 @@ async function parse(
     return err(templateRaw.error);
   }
 
+  if (!env.value?.data) {
+    return err(new Error("Missing data in env"));
+  }
+
   const template = await templates.apply(ctx, {
     template: templateRaw.value as string,
-    context: env.value,
+    context: env.value?.data,
   });
   if (template.isErr()) {
     return err(template.error);
