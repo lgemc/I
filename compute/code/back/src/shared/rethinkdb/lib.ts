@@ -1,6 +1,7 @@
-import { Context } from '@i/core/context'
 import { Result, ok, err } from 'neverthrow'
 import { Connection, r } from 'rethinkdb-ts'
+
+import { Context } from '@i/core/context'
 import env from '@i/shared/env/lib'
 
 const conn: Connection | undefined = undefined
