@@ -1,7 +1,7 @@
 import { Result, err, ok } from "neverthrow";
 import yaml from "js-yaml";
 
-function parseString(input: { data: string }): Result<string, Error> {
+function parseString<T = any>(input: { data: string }): Result<T, Error> {
   try {
     const data = yaml.load(input.data);
 
