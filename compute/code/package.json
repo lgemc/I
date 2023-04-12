@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "cli": "env-cmd -f .env npx esbuild-runner cli"
+    "cli": "env-cmd -f .env npx --enable-source-maps esbuild-runner cli"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.17",

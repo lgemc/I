@@ -17,3 +17,7 @@ export function log(ctx: Context, input: LogInput) {
 export function logCritical(ctx: Context, event: string, data: any) {
   logger.log(ctx, { level: LogLevel.Critical, event, data });
 }
+
+export function logInfo(ctx: Context, event: string, data: any) {
+  logger.log(ctx, { level: LogLevel.Info, event, data });
+}
