@@ -20,8 +20,8 @@ async function list(ctx: Context): Promise<Result<Message[], Error>> {
     const messages = await table.run(conn.value);
 
     return ok(messages);
-  } catch (err) {
-    return err(err);
+  } catch (e) {
+    return err(e);
   }
 }
 

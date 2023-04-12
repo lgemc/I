@@ -35,8 +35,8 @@ async function listModels(): Promise<Result<any, AxiosError>> {
       },
     });
     return ok(response);
-  } catch (error) {
-    return err(error);
+  } catch (e) {
+    return err(e);
   }
 }
 
