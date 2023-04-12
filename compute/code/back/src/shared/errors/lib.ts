@@ -8,3 +8,9 @@ export function buildObject(error: Error): object {
   );
   return newValue;
 }
+
+const errorsLib = {
+  buildObject,
+};
+
+export default errorsLib;
