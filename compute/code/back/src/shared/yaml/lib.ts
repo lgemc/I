@@ -10,3 +10,9 @@ function parseString(input: { data: string }): Result<string, Error> {
     return err(e);
   }
 }
+
+const yamlLib = {
+  parseString,
+};
+
+export default yamlLib;
