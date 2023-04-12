@@ -36,6 +36,8 @@ class DatabaseEmitter extends EventEmitter {
         this._db_emitter.on("error", (err) => {
           this.emit("error", err);
         });
+
+        return ok(this);
       }
     } catch (e) {
       return err(e);

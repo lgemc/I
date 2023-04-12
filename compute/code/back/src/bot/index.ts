@@ -1,6 +1,6 @@
 import { Context } from "@i/core/context";
 import databaseEmitter from "@i/core/db/emmiter";
-import { Result, err } from "neverthrow";
+import { Result, err, ok } from "neverthrow";
 import { EventEmitter } from "stream";
 
 class Bot {
@@ -19,6 +19,8 @@ class Bot {
     this._database_emiter.on("/messages", (data) => {
       console.log(`hi from bot, data: ${data}`);
     });
+
+    return ok(this);
   }
 }
 
