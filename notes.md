@@ -1,7 +1,17 @@
 #
+
+La razon de que el testing funcione tan bien es por que nos da un lugar donde podemos ejecutar nuestro codigo y obtener feedback, esto lo convierte en un ambiente valido
+
+#
+
+Los test de integracion deberian tener inicio de infraestructura y ejecucion de assertions alli
+podria ser en docker
+
+#
+
 Existen distintos tipos de target para la educacion: los que tienen claro el ambiente en el qeu necesitaran
 la informacion que les va a llegar por experiencias en ambientes previos y capatran mucho mejor la informacion,
-los que quieren aprender pero ncesitaran ayuda ambiental para ponerse al tanto de que necesitan y por que, y los 
+los que quieren aprender pero ncesitaran ayuda ambiental para ponerse al tanto de que necesitan y por que, y los
 escepticos que simplemente no les interesa lo que estan viendo
 
 #
