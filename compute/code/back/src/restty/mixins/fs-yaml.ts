@@ -1,8 +1,9 @@
 import { Context } from "@i/core/context";
-import { Result, err } from "neverthrow";
+import { Result, err, ok } from "neverthrow";
 import fs from "../fs";
 import yamlLib from "@i/shared/yaml/lib";
 import templates from "../templates";
+import { Endpoint } from "@i/restty/types";
 
 async function parse(
   ctx: Context,
@@ -10,7 +11,7 @@ async function parse(
     templatePath: string;
     envPath?: string;
   }
-): Promise<Result<any, Error>> {
+): Promise<Result<Endpoint, Error>> {
   let envRaw = undefined;
   if (input.envPath) {
     envRaw = await fs.load({ path: input.envPath });
@@ -42,5 +43,11 @@ async function parse(
     return err(endpoint.error);
   }
 
-  return endpoint;
+  return ok(endpoint.value as Endpoint);
 }
+
+const fs$yaml = {
+  parse,
+};
+
+export default fs$yaml;
