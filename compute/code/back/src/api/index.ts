@@ -38,6 +38,11 @@ messages.post("/", async (ctx: ParameterizedContext) => {
   ctx.body = { message_id: generateID({ length: 30, prefix: "MSG" }) };
 });
 
+messages.get("/", async (ctx: ParameterizedContext) => {
+  ctx.status = http.Status.OK;
+  ctx.body = { messages: [] };
+});
+
 app.use(router.routes());
 app.use(router.allowedMethods());
 
