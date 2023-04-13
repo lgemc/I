@@ -1,0 +1,22 @@
+{
+  "builders": [
+    {
+      "type": "docker",
+      "image": "ubuntu:latest",
+      "commit": true
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "install_nginx.sh"
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "docker-tag",
+      "repository": "my-nginx",
+      "tag": "latest"
+    }
+  ]
+}

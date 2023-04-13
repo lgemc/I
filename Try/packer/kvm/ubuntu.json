@@ -1,0 +1,68 @@
+{
+  "builders": [
+    {
+      "accelerator": "kvm",
+      "boot_command": [
+        "<esc><wait>",
+        "<esc><wait>",
+        "<enter><wait>",
+        "/install/vmlinuz noapic preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
+        "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
+        "hostname={{ .Name }} ",
+        "fb=false debconf/frontend=noninteractive ",
+        "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA ",
+        "keyboard-configuration/variant=USA console-setup/ask_detect=false ",
+        "initrd=/install/initrd.gz -- <enter>"
+      ],
+      "cpus": 2,
+      "disk_interface": "virtio",
+      "disk_size": "40960M",
+      "format": "qcow2",
+      "headless": true,
+      "iso_checksum": "sha256:b8f31413336b9393ad5d8ef0282717b2ab19f007df2e9ed5196c13d8f9153c8b",
+      "iso_url": "http://releases.ubuntu.com/{{user `ubuntu_version`}}/ubuntu-{{user `ubuntu_version`}}.6-live-server-amd64.iso",
+      "memory": 2048,
+      "net_device": "virtio-net",
+      "qemuargs": [
+        ["-m", "2048"],
+        ["-smp", "2"],
+        ["-accel", "kvm"],
+        ["-machine", "type=q35"],
+        ["-device", "virtio-rng-pci"],
+        ["-device", "virtio-scsi-pci,id=scsi"],
+        [
+          "-drive",
+          "file=ubuntu-{{user `ubuntu_version`}}.6-live-server-amd64.iso,media=cdrom"
+        ],
+        [
+          "-drive",
+          "file=ubuntu-{{user `ubuntu_version`}}-server-amd64.qcow2,if=virtio,cache=writeback,discard=unmap"
+        ]
+      ],
+      "shutdown_command": "echo 'vagrant' | sudo -S shutdown -P now",
+      "ssh_password": "vagrant",
+      "ssh_port": 22,
+      "ssh_timeout": "30m",
+      "ssh_username": "vagrant",
+      "type": "qemu"
+    }
+  ],
+  "post-processors": [
+    {
+      "compression_level": 9,
+      "output": "{{user `vagrant_box_name`}}.box",
+      "type": "vagrant"
+    }
+  ],
+  "provisioners": [
+    {
+      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S sh '{{.Path}}'",
+      "script": "install-nginx.sh",
+      "type": "shell"
+    }
+  ],
+  "variables": {
+    "ubuntu_version": "20.04",
+    "vagrant_box_name": "my-ubuntu-box"
+  }
+}
