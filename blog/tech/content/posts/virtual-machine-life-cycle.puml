@@ -1,0 +1,12 @@
+@startuml
+actor User
+User -> PackerFile: define
+User -> PackerCli: build
+PackerCli -> IsoVendors: Download
+PackerCli -> PackerCli: validate checksum
+PackerCli -> virtualization: start machine
+PackerCli -> virtualization: ssh
+PackerCli -> machine: execute provisioners
+PackerCli -> virtualization: stop machine
+PackerCli -> virtualization: export machine
+@enduml
