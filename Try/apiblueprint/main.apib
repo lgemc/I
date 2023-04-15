@@ -1,0 +1,25 @@
+# My API
+
+Este es un ejemplito jeje
+- Hola que mas
+- Si, un ejemplo asies
+## User [/users/{id}]
+A user resource object represents a user account in our system.
+
+### Get User [GET]
++ Parameters
+    + id (required, string, `123`) - The ID of the user to retrieve.
+
++ Response 200 (application/json)
+    + Headers
+        X-Rate-Limit: 1000 aber
+        X-Rate-Remaining: 987
+    + Body
+        {
+            "id": "123",
+            "name": "John Doe",
+            "email": "john.doe@example.com",
+            "created_at": "2022-04-14T12:34:56Z",
+            "updated_at": "2022-04-14T12:34:56Z"
+        }
+
