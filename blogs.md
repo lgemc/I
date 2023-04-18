@@ -9,3 +9,4 @@ How to install a microstack with canonical
 - https://idratherbewriting.com/learnapidoc/docapis_formats.html
 - https://www.openstack.org/videos/summits/virtual/Own-your-YAML-extending-Kustomize-via-Plugins
 - https://thirumurthi.hashnode.dev/build-custom-kustomize-plugin-with-containerized-krm-function
+- https://github.com/stakater/Reloader
