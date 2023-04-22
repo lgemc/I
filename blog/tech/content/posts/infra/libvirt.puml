@@ -1,0 +1,44 @@
+@startuml 
+node machine {
+    package platforms {
+        file kvm
+        file virtualbox
+        file qemu
+    }
+
+    package libvirt {
+
+    }
+
+    package languages {
+        file c
+        file ruby 
+        file js
+
+        js -> c
+    }
+
+    languages -> libvirt
+    libvirt -> platforms
+
+    package app 
+
+    package sharedLibvirLib 
+    package cli 
+
+    app -> sharedLibvirLib
+    cli -> sharedLibvirLib
+   
+    sharedLibvirLib -> libvirt
+
+    package virtTools {
+        file virtClone as "virt-clone"
+        file virtDf as "virt-df"
+        file virsh
+        file virtInstall as "virt-install"
+        file virtWhat as "virt-what"
+    } 
+    virtTools -> libvirt
+}
+
+@enduml

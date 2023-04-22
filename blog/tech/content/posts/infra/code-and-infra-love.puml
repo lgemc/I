@@ -1,0 +1,17 @@
+@startuml 
+actor user 
+
+package code {
+    package libvirt 
+    node emulation {
+        collections machines
+    }
+
+    package cli 
+
+    cli -> libvirt : calls
+    libvirt -> emulation : libvirt calls
+}
+
+user -> cli : commands
+@enduml

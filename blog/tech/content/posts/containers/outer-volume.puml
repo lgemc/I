@@ -1,0 +1,8 @@
+@startuml 
+cloud "Este es el formato normal de deployment, \n el problema es que los datos dentro \n de el container mueren con el, y el container esperas que viva y muera, \n no que siempre este disponible"
+package container {
+component rethinkdb {
+    file storage 
+}   
+}
+@endum

@@ -15,5 +15,10 @@ dist/*
 blog/tech/public/*
 resources/*
 **/*.raw.yaml
-profile/**/*.log
-profile/**/*.aux
+documents/latex/dist/*.log
+documents/latex/dist/*.yaml
+documents/latex/dist/*.xml
+documents/latex/dist/*.bcf
+documents/latex/dist/*.xmpi
+documents/latex/dist/*.out
+documents/latex/dist/*.aux

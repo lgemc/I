@@ -1,0 +1,25 @@
+@startuml 
+
+node host {
+       component compose 
+     component volume1 as "volume"{
+            file rethinkData1 as "rethinkData"
+        }
+            compose -> volume1: mounts into stack
+
+    component stack {
+        component volume {
+            file rethinkData
+        }
+
+        package container {
+
+        component rethinkdb {
+        }
+        }
+
+        volume -> volume1: is a shorcut of
+        }
+ 
+}
+@endum
