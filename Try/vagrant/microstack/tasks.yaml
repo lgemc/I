@@ -1,0 +1,13 @@
+- name: Install microstack
+  hosts: all
+  become: true
+  tasks: 
+    - name: Install snapd
+      apt:
+        name: snapd
+        state: present
+    - name: Install microstack package
+      snap:
+        name: microstack
+        channel: beta
+        state: present 
