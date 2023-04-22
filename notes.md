@@ -1,4 +1,29 @@
 #
+
+La libertad humana no puede ser medida solo en el verbo de decir libertad o considerarse si no que debe tener garantías de conocimiento y capacidad para ejercer actividades sin cohersion
+
+# 
+
+Propagate: una forma de compartir contactos y mensajes y que estos puedan ser respuestas por algún miembro de la red y le llegue a los contactos necesarios 
+
+#
+
+Tips: el blog va a tener muchos temas, pero se debe dar un descanso entre tema y tema para permitir disfrutar de el aprendizaje y que no luzca eterno, como ocurre en los videojuegos 
+
+#
+
+Parte de el problema de el desarrollo actual es que saltamos demasiado rápido a las APIs y no tenemos un ambiente válido en el camino, las APIs son el último paso antes de liberar el sistema, la interfaz se define al final de la app y no al revés 
+
+
+El ciclo real es: bases de datos, librerías, storages, controladores y servicios y al final es que vienen las interfaces 
+
+Para cerrar un poco el gap podemos hacer comand line interfaces hacia la db para tener un ambiente válido 
+
+#
+
+Existen actividades que generan comunidad 
+
+#
 Existen distintos tipos de target para la educacion: los que tienen claro el ambiente en el qeu necesitaran
 la informacion que les va a llegar por experiencias en ambientes previos y capatran mucho mejor la informacion,
 los que quieren aprender pero ncesitaran ayuda ambiental para ponerse al tanto de que necesitan y por que, y los 
