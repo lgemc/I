@@ -1,13 +1,9 @@
-{ 
+{
   "compilerOptions": {
     "rootDir": "./",
     "baseUrl": "./",
     "skipLibCheck": true,
-    "lib": [
-      "dom",
-      "ESNext",
-      "ES2021.String"
-    ],
+    "lib": ["dom", "ESNext", "ES2021.String"],
     "experimentalDecorators": true,
     "incremental": true,
     "esModuleInterop": true,
@@ -16,7 +12,7 @@
     "paths": {
       "@i/*": ["back/src/*"],
       "@cli/*": ["cli/*"],
-      "@ops/*": ["ops/*"],
+      "@ops/*": ["ops/*"]
     },
     "target": "ES2018",
     "module": "CommonJS",
@@ -24,11 +20,8 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "jsx": "react-jsx",
-    "types": ["node"]
+    "types": ["node", "mocha"]
   },
   "include": ["./"],
-  "exclude": [
-    "**/node_modules/**",
-    "**/*.test.*/**"
-  ]
+  "exclude": ["**/node_modules/**"]
 }

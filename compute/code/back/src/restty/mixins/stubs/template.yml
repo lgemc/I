@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Endpoint
+metadata:
+  name: List messages
+spec:
+  path: "{{ host }}:{{ port }}/messages"
+  method: GET
