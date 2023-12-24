@@ -18,10 +18,11 @@ module "compute" {
 
   main_vpc_id = module.vpc.main_vpc_id
 
-  main_network_interface_id    = module.vpc.main_network_interface_id
-  child_0_network_interface_id = module.vpc.child_0_network_interface_id
-  etcd_network_interface_id    = module.vpc.etcd_interface_id
-  main_instance_profile_name   = module.iam.main_instance_profile_name
+  graphics_network_interface_id = module.vpc.graphics_network_interface_id
+  main_network_interface_id     = module.vpc.main_network_interface_id
+  child_0_network_interface_id  = module.vpc.child_0_network_interface_id
+  etcd_network_interface_id     = module.vpc.etcd_interface_id
+  main_instance_profile_name    = module.iam.main_instance_profile_name
 }
 
 module "iam" {
