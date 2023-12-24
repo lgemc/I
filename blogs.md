@@ -1,15 +1,19 @@
 Este emn es un duro de la educacion: https://www.josedomingo.org/pledin/
+ - Curso para crear una empresa en usa https://platzi.com/cursos/incorporacion-startups-stripe-atlas/ - Curso para entender como se mezcla marketing con no code https://platzi.com/cursos/no-code-marketing/
+
+- Curso para hacer landings, testear ideas, crear mensajes y cobrar con gumroad https://platzi.com/cursos/diseno-nocode/
+- https://blog.verbum.org/2020/08/22/immutable-%e2%86%92-reprovisionable-anti-hysteresis/
 
 - https://blog.ve- tool: https://www.gnucash.org
 
 - http://wiki.zeromq.org/docs:welcome-from-amqp
--  https://docs.gluster.org/en/latest/Quick-Start-Guide/Quickstart/#step-5-configure-the-trusted-pool
--  https://stackoverflow.com/questions/60903362/kubectl-how-to-read-ingress-hosts-from-config-variables
--  https://www.linux-kvm.org/page/Management_Tools
->>>>>>>+master
--from-config-variables
--  https://www.linux-kvm.org/page/Management_Tools
-How to install a microstack with canonical 
+- https://docs.gluster.org/en/latest/Quick-Start-Guide/Quickstart/#step-5-configure-the-trusted-pool
+- https://stackoverflow.com/questions/60903362/kubectl-how-to-read-ingress-hosts-from-config-variables
+- https://www.linux-kvm.org/page/Management_Tools
+  > > > > > > > +master
+  > > > > > > > -from-config-variables
+- https://www.linux-kvm.org/page/Management_Tools
+  How to install a microstack with canonical
 
 - tool: https://www.gnucash.org
 
@@ -18,6 +22,5 @@ How to install a microstack with canonical
 - https://idratherbewriting.com/learnapidoc/docapis_formats.html
 - https://www.openstack.org/videos/summits/virtual/Own-your-YAML-extending-Kustomize-via-Plugins
 - https://thirumurthi.hashnode.dev/build-custom-kustomize-plugin-with-containerized-krm-function
-- https://github.com/stakater/Reloader
-=======
->>>>>>> github/master
+- # https://github.com/stakater/Reloader
+  > > > > > > > github/master

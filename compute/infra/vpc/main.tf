@@ -46,3 +46,7 @@ output "child_0_network_interface_id" {
 output "main_subnet_id" {
   value = module.subnet.main_subnet_id
 }
+
+output "graphics_network_interface_id" {
+  value = module.network_interface.graphics_network_interface_id
+}
