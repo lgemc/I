@@ -34,11 +34,6 @@ module "vpc" {
   main_security_group_id = module.compute.main_security_group_id
 }
 
-module "efs" {
-  source                 = "./efs"
-  main_security_group_id = module.compute.main_security_group_id
-  main_subnet_id         = module.vpc.main_subnet_id
-}
 
 output "main_eip_address" {
   value = module.compute.main_eip_address
@@ -50,8 +45,4 @@ output "etcd_eip_address" {
 
 output "child_0_address" {
   value = module.compute.child0_node_address
-}
-
-output "main_efs_file_system_id" {
-  value = module.efs.main_efs_file_system_id
 }
