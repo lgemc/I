@@ -22,4 +22,5 @@ documents/latex/dist/*.bcf
 documents/latex/dist/*.xmpi
 documents/latex/dist/*.out
 documents/latex/dist/*.aux
+**.idea**
 **Pods**
