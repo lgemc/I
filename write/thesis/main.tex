@@ -1,0 +1,80 @@
+\documentclass[12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx} 
+\usepackage{amsmath, amssymb} % for math features
+\usepackage{hyperref} %
+
+\title{About computational spaces}
+\author{Luis Gerardo Manrique Cardona}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+La computacion actual se centra en el estudio de los limites de la computacion, y sobre algunas maquinas teoricas
+que ayudan a comprender ciertos problemas.
+
+Hasta ahora sin embargo, la teoria no se ha podido expandir a procesos complejos de la realidad, tales como la sociologica,
+psicologia o economia, o almenos modelados de estos problemas no pertenecen al area de la computacion.
+
+El presente trabajo introduce el concepto de espacios computacionales, el cual pretende ser un marco para expandir el espectro
+de problemas donde la teoria computacional puede modelar problemas de forma eficaz, empezando por abarcar la computacion clasica 
+(maquinas de turing, $\pi $ calculus y otras variantes de la maquina de turing), otras maquinas modernas autoprogramables como
+las usadas en la estadistica predictiva y por ultimo como modelar problemas economicos actuales.
+
+\chapter{Background}
+
+Puede entenderse la teoria de espacios computacionales como una rama de la pancomputacion, teoria que predica que todo evento en
+el universo, y el universo mismo puede representarse como parte de la teoria de la computacion.
+
+En ese orden de ideas, preferiria partir el concepto de computacion en dos areas:
+
+1. Maquinas concretas de computacion.
+
+2. Espacios computacionales. 
+\\
+Donde los espacios computacionales comprenden las maquinas concretas.
+\\
+\\
+Con esto, la teoria de maquinas de computacion se encargan de revisar modelos especificos teoricos o practicos acerca de la computacion,
+mientras que los espacios computacionales demarcan una teoria transversal que especifica la forma de construir, describir y descubrir
+nuevas maquinas computacionales.
+
+De esta forma, podria entenderse los espacios computacionales como una meta-computacion.
+
+\chapter{Methodology}
+
+Se plantean los siguientes objetivos
+
+\begin{enumerate}
+    \item Describir las bases matematicas para los espacios computacionales
+    \item Demostrar que los espacios computacionales son turing completos
+    \item Mostrar algunos ejemplos de la economia y la sociologia con la nueva teoria introducida
+    \item Aplicar los conceptos de los espacios computacionales a la actual computacion estadistica predictiva y demostrar aplicaciones practicas
+\end{enumerate}
+
+\chapter{Develop}
+\section{Introduccion a los espacios computacionales}
+
+Un espacio computacional sera definido como un conjunto $W$ donde pueden existir eventos $T$, y otros subespacios $S$, donde las
+interacciones definidas entre estos estan definidas por: 
+
+\begin{enumerate}
+    \item $A \rightarrow B$ (el espacio $A$ puede emitir eventos a $B$, y no especifica si $B$ es modificada o no, solo establece la posibilidad)
+    \item $A \rightarrow \Box B$ (el espacio $A$ puede emitir eventos a $B$, tal que $B$ sufre modificaciones permanentes)
+    \item $A \rightarrow \textbackslash B$ (el espacio $A$ puede emitir eventos a $B$, tal que $B$ sufre modificaciones temporales)
+    \item Sea $\frac{E}{\rightarrow}$ el conjunto de eventos que existen en $W$ y pueden ser emitidos y recibidos por todos los espacios bajo $W$ y por $W$ mismo
+    \item $\frac{T}{\rightarrow} A \frac{S}{\rightarrow}$ significara que $A$ puede recibir eventos $T$ y dar como resultado eventos $S$
+    \item $|W|$ sera definido como la cantidad de eventos $\frac{T}{\rightarrow}$ que puedan existir dentro de $W$, y la cantidad de duplas $A \rightarrow B$ que puedan existir.
+\end{enumerate}
+
+\section{Sobre las modificaciones que puede sufrir un espacio computacional}
+
+Sea \(W = \{A, \frac{T}{\rightarrow}, A \frac{T_a}{\rightarrow} \Box W \}\), llamaremos $T_{a+}$ a todos los eventos de $T$ tal que $W_1, A\frac{T_{a+}}{\rightarrow}\Box W, W_2, |W_2| > |W_1|$ es decir, los eventos $T_{a+}$ causaron una nueva tupla $A \rightarrow B$ dentro de $W$ 
+o añadieron elemetnos a los posibles $T$.
+\\\\
+Por el contrario, llamaremos $T_{a-}$ si $W_1, A\frac{T_{a-}}{\rightarrow}\Box W, W_2, |W_2| < |W_1|$ es decir, los eventos $T_{a-}$ removieron una tupla existente $A \rightarrow B$ dentro de $W$ o eliminaron elementos de los posibles $T$.
+\end{document}
