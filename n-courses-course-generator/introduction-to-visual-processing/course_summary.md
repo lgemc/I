@@ -1,0 +1,3 @@
+# Introduction to image processing with deep learning
+
+An introduction to image processing with deep learning, which explores the history and applications of image processing, the basics of deep learning and neural networks related to vision, the types of image processing techniques, and how to implement deep learning models for image processing tasks. This course requires prior knowledge of Python, basic machine learning concepts, some experience with deep learning, and maths.
