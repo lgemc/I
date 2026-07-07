@@ -1,26 +1,14 @@
-.env*
-node_modules
-**/.vagrant*
-**/__pycache__/**
-.DS_Store
-nourish/db/*
-dist/*
-**/.terraform/**
-**/*.backup
-**/*.hcl
-**/*.tfstate
-**/*.swp
-**/*.lock
-dist/*
-blog/tech/public/*
-resources/*
-**/*.raw.yaml
-documents/latex/dist/*.log
-documents/latex/dist/*.yaml
-documents/latex/dist/*.xml
-documents/latex/dist/*.bcf
-documents/latex/dist/*.xmpi
-documents/latex/dist/*.out
-documents/latex/dist/*.aux
-**.idea**
-**Pods**
+# Sensitive originals - should never be committed
+profile/CED_CIUDADANIA.pdf
+profile/Profile photo.jpg
+profile/Profile photo.heic
+profile/Profile photo blank.jpg
+profile/Acta de grado.pdf
+profile/Certificado afiliacion sura.pdf
+profile/Luis_Gerardo_Manrique_Cardona.pdf
+profile/Luis_Gerardo_Manrique_Cardona_-_-2.pdf
+parents/cedulaGerardo.png
+parents/cedulaRuth.png
+
+# Key files - NEVER commit these
+age.key
